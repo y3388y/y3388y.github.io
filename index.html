@@ -36,7 +36,7 @@
             width: 100%;
             background-color: rgba(231, 195, 156, 0.8);
             color: rgb(29, 17, 2);
-padding: 0;
+            padding: 0;
             position: absolute;
             justify-content: space-around;
             position: fixed;
@@ -55,7 +55,7 @@ padding: 0;
 
 
         /* } */
-        .sedction_1 {
+        .section_1 {
             width: 100%;
         }
 
@@ -93,11 +93,19 @@ padding: 0;
             background-size: cover;
             background-position: center;
         } */
-
-        .pic {
+        .pii {
             width: 100%;
             height: 100vh;
             background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+
+        .pic {
+            width: 100%;
+            height: 200vh;
+            background-size: contain;
             background-position: center;
             position: relative;
         }
@@ -133,7 +141,16 @@ padding: 0;
 
             text-align: center;
             background-color: rgba(253, 253, 253, 0.8);
-            padding: 90px;
+            padding: 50px;
+
+        }
+
+        .text6 {
+            width: 100%;
+
+            text-align: left;
+            background-color: rgba(253, 253, 253, 0.8);
+            padding: 50px;
 
         }
 
@@ -154,15 +171,20 @@ padding: 0;
             color: aliceblue;
             text-align: center;
         }
-        .foot{ width: 100%;
+
+        .foot {
+            width: 100%;
             background-color: saddlebrown;
-        display: flex;justify-content: center;
-            color: snow;}
+            display: flex;
+            justify-content: center;
+            color: snow;
+        }
 
         .footBox {
-            width:1110px;
+            width: 1110px;
             background-color: saddlebrown;
-            display: flex;justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
             color: snow;
 
         }
@@ -177,7 +199,7 @@ padding: 0;
 
         .mark {
             width: 100%;
-            opacity: 0.3;
+            opacity: 0.65;
             position: absolute;
             z-index: -1;
             top: -60px;
@@ -257,7 +279,7 @@ padding: 0;
             z-index: 9999;
             right: 0px;
             bottom: 150px;
-         
+
         }
 
 
@@ -270,35 +292,35 @@ padding: 0;
         }
 
         #s2 {
-            background-image: url(./img/36.jpg);
+            background-image: url(./img/65.jpg);
             width: 100%;
             height: 600px;
             background-size: cover;
         }
 
         #s3 {
-            background-image: url(./img/43.jpg);
+            background-image: url(./img/323.jpg);
             width: 100%;
             height: 600px;
             background-size: cover;
         }
 
         #s4 {
-            background-image: url(./img/38.jpg);
+            background-image: url(./img/88.jpg);
             width: 100%;
             height: 600px;
             background-size: cover;
         }
 
         #s5 {
-            background-image: url(./img/39.jpg);
+            background-image: url(./img/gr.jpg);
             width: 100%;
             height: 600px;
             background-size: cover;
         }
 
         #s6 {
-            background-image: url(./img/40.jpg);
+            background-image: url(./img/341.jpg);
             width: 100%;
             height: 600px;
             background-size: cover;
@@ -309,7 +331,7 @@ padding: 0;
             /* width: 100%; */
             display: flex;
             justify-content: space-between;
-
+            flex-wrap: wrap;
 
         }
 
@@ -371,6 +393,7 @@ padding: 0;
             height: 500px;
             background-image: url(./img/101.png);
             background-size: cover;
+            background-position: center;
         }
 
 
@@ -425,7 +448,7 @@ padding: 0;
     <section class="section_1">
         <div class="container-fluid">
             <div class="row">
-                <div class="pic pic_1 col-12"></div>
+                <div class="pii pic_1 col-12"></div>
                 <nav class="navbar">
                     <div id="con1" class="container">
                         <div class="row w-100">
@@ -443,10 +466,9 @@ padding: 0;
 
     <section class="section_2">
         <div class="pic pic_2 parallax mark"></div>
+
         <div class="container ">
-            <!-- <div class="box">
-                <h3>關於糖心</h3>
-            </div> -->
+
             <div class="row">
                 <!-- 主題：關於糖心 -->
                 <!-- 標題  -->
@@ -468,64 +490,17 @@ padding: 0;
                 </div>
                 <!-- 圖片 -->
                 <div class="col-12 col-md-5">
-                    <!-- <img class="pic_3" src="./img/80.jpg" alt=""> -->
-                    <img class="pic_3" src="./img/60.jpg" alt="">
+
+                    <img class="pic_3" src="./img/83.jpg" alt="">
                 </div>
-                <!-- 主題：關於糖心 -->
+
                 <!-- 主題：幸福糖心 -->
                 <div class="col-12">
                     <h3>幸福糖心</h3>
                 </div>
                 <!-- 文字 -->
-                <div class="col-7">
+                <div class="col-12 col-md-7 py-0">
                     <div id="q1" class="text5">
-                        <span>
-                            糖心歷史 <br>
-                            創立於1998年<br>
-                            堅持日本進口的上選原料，
-                            確保完美和諧的幸福美味；<br>
-                            執著費時費工的製作過程，
-                            帶來無與倫比的輕柔口感。<br>
-                        </span>
-                    </div>
-                </div>
-                <!-- 圖片 -->
-                <div class="col-5">
-                    <!-- <img class="pic_3" src="./img/80.jpg" alt=""> -->
-                    <img class="pic_3" src="./img/60.jpg" alt="">
-                </div>
-                <!-- 主題：幸福糖心 -->
-                <!-- <div class="col-auto">
-                    <div id="q1" class="text5">
-                        <span>
-                            糖心歷史 <br>
-                            創立於1998年<br>
-                            堅持日本進口的上選原料，
-                            確保完美和諧的幸福美味；<br>
-                            執著費時費工的製作過程，
-                            帶來無與倫比的輕柔口感。<br>
-                        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <img class="pic_3" src="./img/80.jpg" alt="">
-                        <img class="pic_3" src="./img/60.jpg" alt="">
-                    </div>
-                </div> -->
-            </div>
-
-    </section>
-
-    <!-- <section class="section_2">
-        <div class="pic pic_2 parallax mark"></div>
-        <div class="container">
-            <div class="box">
-                <h3>幸福糖心</h3>
-            </div>
-            <div class="row">
-                <div class="col-auto">
-                    <div id="q2" class="text5">
                         <span>
                             傳遞幸福<br>
                             有糖心的地方就有令人一再回味的幸福感動。<br>
@@ -535,27 +510,21 @@ padding: 0;
                         </span>
                     </div>
                 </div>
+                <!-- 圖片 -->
+                <div class="col-5">
 
-                <div class="row">
-                    <div class="col-auto">
-                        <img class="pic_3" src="./img/83.jpg" alt="">
-                    </div>
+                    <img class="pic_3" src="./img/60.jpg" alt="">
                 </div>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
 
-    <section class=" section_2">
-        <div class="pic pic_2 parallax mark"></div>
-        <div class="container">
-            <div class="text">
-                <h3>最新消息</h3>
-            </div>
-            <div class="row">
-                <div class="col-auto">
-                    <div class="text5 ">
+
+
+                <div class="col-12">
+                    <!-- <div class="text"> -->
+                    <h3>最新消息</h3>
+
+                </div>
+                <div class="col-12 col-md-7 py-0">
+                    <div id="q1" class="text6">
                         <span>
                             新 品 上 市 全 面 9 折<br>
                             3/28 珍珠奶茶蛋糕 風靡全球台灣甜品，<br>
@@ -565,15 +534,15 @@ padding: 0;
                         </span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-xl-12">
-                        <img class="pic_3 " src="./img/63363.jpg" alt="">
+                <div class="col-5">
 
-                    </div>
+                    <img class="pic_3 " src="./img/63363.jpg" alt="">
                 </div>
-            </div>
-        </div>
-    </section> -->
+
+
+
+    </section>
+
 
     <section>
         <div id="q3" class="titt">
@@ -586,12 +555,12 @@ padding: 0;
         <div id="swiper_q3">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div id="s1" class="swiper-slide">Slide 1 </div>
-                    <div id="s2" class="swiper-slide">Slide 2<a href=""></a></div></a>
-                    <div id="s3" class="swiper-slide">Slide 3<a href=" "></a></div></a>
-                    <div id="s4" class="swiper-slide">Slide 4<a href=""></a></div></a>
-                    <div id="s5" class="swiper-slide">Slide 5<a href=""></a></div></a>
-                    <div id="s6" class="swiper-slide">Slide 6<a href=""></a></div></a>
+                    <div id="s1" class="swiper-slide">Slide 1</div>
+                    <div id="s2" class="swiper-slide">Slide 2</div>
+                    <div id="s3" class="swiper-slide">Slide 3</div>
+                    <div id="s4" class="swiper-slide">Slide 4</div>
+                    <div id="s5" class="swiper-slide">Slide 5</div>
+                    <div id="s6" class="swiper-slide">Slide 6</div>
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
@@ -601,18 +570,7 @@ padding: 0;
     </section>
 
     <section>
-        <!-- <div class="btubox">
-            <div class="butte1"></div>
-            <div class="butte2"></div>
-            <div class="butte3"></div>
-            <div class="butte4"></div>
-            <div class="butte5"></div>
-            <div class="butte6"></div>
-        </div> -->
 
-
-        <!-- 在btnbox 給他flex -->
-        <!-- css打錯 -->
         <div class="container btubox">
             <div class="butte1"></div>
             <div class="butte2"></div>
@@ -795,13 +753,14 @@ padding: 0;
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/33.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/84.jpg" class="d-block w-100" alt="...">
+
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/60.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/555.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/28.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/88.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
