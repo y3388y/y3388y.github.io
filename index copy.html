@@ -29,27 +29,49 @@
         }
 
 
-:hover#a1{background-color: rgb(209, 121, 13);}
-:hover#a2{background-color: darkorange;}
-:hover#a3{background-color: darkorange;}
-:hover#a4{background-color: darkorange;}
-:hover#a5{background-color: darkorange;}
 
+        html {
+            scroll-behavior: smooth;
+
+        }
 
         .navbar-nav {
-            
-            background-color: rgba(231, 195, 156, 0.8);
-            color: rgb(29, 17, 2);
             font-size: 24px;
             font-family: 'Times New Roman', Times, serif;
-
-            position: absolute;
             justify-content: center;
-            position: fixed;
-            z-index: 9999;
+            margin: 0 auto;
+            transform: translateX(-22.5%);
+
         }
 
 
+        .bg-op {
+            background-color: rgba(0, 0, 0, 0.199) !important;
+        }
+        .bg-op-dark{
+            background-color: rgba(0, 0, 0, 0.774) !important;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .navbar-light .navbar-nav .nav-link:hover{
+            color: rgb(255, 255, 255);
+        }
+        @media(max-width: 960px) {
+            .navbar-nav {
+                margin: 0 auto;
+                transform: unset;
+
+            }
+
+            .bg-op {
+                background-color: rgb(255, 255, 255) !important;
+            }
+
+            .white {
+                color: rgba(0, 0, 0, 0.5) !important;
+            }
+        }
 
         #con1 {
             width: 600px;
@@ -240,7 +262,7 @@
 
 
 
-       /* .mark{width: 1
+        /* .mark{width: 1
         00%;
 
             height: 100vh;opacity: 0.65;} */
@@ -298,12 +320,14 @@
             z-index: 9999;
             right: 0px;
             bottom: 100px;
-           
-        
+
+
         }
 
-:hover.back {background-color: rgb(252, 136, 5);
-border-radius: 20%;}
+        :hover.back {
+            background-color: rgb(252, 136, 5);
+            border-radius: 20%;
+        }
 
         #s1 {
             background-image: url(./img/13.png);
@@ -505,7 +529,7 @@ border-radius: 20%;}
 
         .map {
             width: 1140px;
-            height:300px;
+            height: 300px;
         }
     </style>
 
@@ -517,27 +541,30 @@ border-radius: 20%;}
 
 
 
-    
+
 
     <section class="section_1">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- <a class="navbar-brand" href="#">糖心蛋糕</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a id="a1" class="nav-item nav-link active" href="#">首頁 <span class="sr-only">(current)</span></a>
-                    <a id="a2" class="nav-item nav-link" href="#q1">關於糖心</a>
-                    <a id="a3" class="nav-item nav-link" href="#aqaq">影片蛋糕</a>
-                    <a id="a4" class="nav-item nav-link" href="#q3">糖心蛋糕</a>
-                    <a id="a5" class="nav-item nav-link" href="#q5">頁尾</a>
-
-                </div>
+        <div class="row" style=" margin: 0;">
+            <div class="col position-fixed" style="z-index: 20; padding: 0;">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-op">
+                    <a class="navbar-brand  " href="#">糖心蛋糕</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a id="a1 " class="nav-item nav-link " href="#">首頁 </a>
+                            <a id="a2 " class="nav-item nav-link " href="#q1">關於糖心</a>
+                            <a id="a3 " class="nav-item nav-link " href="#aqaq">影片蛋糕</a>
+                            <a id="a4 " class="nav-item nav-link " href="#q3">糖心蛋糕</a>
+                            <a id="a5 " class="nav-item nav-link " href="#q5">頁尾</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </section>
     <div id="pcc" class="pii pic_1 col-12"></div>
 
@@ -656,12 +683,12 @@ border-radius: 20%;}
         <div id="swiper_q3">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div id="s1" class="swiper-slide">Slide 1</div>
-                    <div id="s2" class="swiper-slide">Slide 2</div>
-                    <div id="s3" class="swiper-slide">Slide 3</div>
-                    <div id="s4" class="swiper-slide">Slide 4</div>
-                    <div id="s5" class="swiper-slide">Slide 5</div>
-                    <div id="s6" class="swiper-slide">Slide 6</div>
+                    <div id="s1" class="swiper-slide"></div>
+                    <div id="s2" class="swiper-slide"></div>
+                    <div id="s3" class="swiper-slide"></div>
+                    <div id="s4" class="swiper-slide"></div>
+                    <div id="s5" class="swiper-slide"></div>
+                    <div id="s6" class="swiper-slide"></div>
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
@@ -955,9 +982,9 @@ border-radius: 20%;}
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div id="lt" class="col-12 flex-wrap flex-sm-nowrap">
+                            <div id="lt" class="col-12 flex-wrap flex-sm-nowrap ">
                                 <!-- <div class="lt"> -->
-                                <div class="tleft  mb-4 mb-sm-0 " >
+                                <div class="tleft  mb-4 mb-sm-0">
                                     <p>訂購方法 <i class="far fa-address-card"></i><br>
                                         1. 網路訂購需含三日工作天，如急需當日/ 隔日蛋糕，<br>
                                         請直接電話聯繫(04)1234-5678，會由店面夥伴為您服務 。<br>
@@ -968,7 +995,7 @@ border-radius: 20%;}
                                     </p>
                                 </div>
                                 <div class="tright  mb-sm-0">
-                                    <p> 蛋糕保存方式 <i class="far fa-addr.ess-card"></i><br>
+                                    <p> 蛋糕保存方式 <i class="far fa-address-card"></i><br>
                                         「純戚風蛋糕」建議保存方式：取貨當日未食用完畢請放冷藏，<br>
                                         能夠再放置冷藏兩天。
                                         「鮮奶油」類蛋糕建議保存方式：取貨後一個半小時內放回冷藏，能夠放置兩天。<br>
@@ -979,19 +1006,19 @@ border-radius: 20%;}
                             </div>
                         </div>
 
-                        
-                    <div class="map">
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1409814282924!2d120.68257731498932!3d24.166787984385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de96a0520b%3A0xa558b8e284d3a5cb!2z6Ie65Lit5rCR55y-5oqA6Jed6KOc57-S54-tLeiBt-iok-aVmeiCsuS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1587629163464!5m2!1szh-TW!2stw"
-                            width="1110" height="300" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-    
-                    </div>
+                        <div class="map">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1409814282924!2d120.68257731498932!3d24.166787984385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de96a0520b%3A0xa558b8e284d3a5cb!2z6Ie65Lit5rCR55y-5oqA6Jed6KOc57-S54-tLeiBt-iok-aVmeiCsuS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1587629163464!5m2!1szh-TW!2stw"
+                                width="1110" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+
+                        </div>
                     </div>
 
                 </div>
-               
+
         </div>
     </section>
 
@@ -1099,6 +1126,21 @@ border-radius: 20%;}
                 el: '.swiper-pagination',
             },
         });
+        $(window).scroll(function () {
+            var TopL = $(window).scrollTop()
+            var NavBar = document.querySelector("#navbar")
+            console.log(TopL);
+
+            if ($(window).scrollTop() > 1000) {
+                NavBar.classList.remove("bg-op")
+                NavBar.classList.add("bg-op-dark")
+            }
+            else {
+                NavBar.classList.add("bg-op")
+                NavBar.classList.remove("bg-op-dark")
+
+            }
+        })
     </script>
 
 
