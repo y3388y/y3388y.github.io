@@ -13,12 +13,16 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-    <link rel="stylesheet" href="../package/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="../package/css/swiper.min.css"> -->
 
 
 
 
     <style>
+        section{
+            /* width: 100%; */
+            /* overflow: hidden; */
+        }
         * {
             box-sizing: border-box;
             position: relative;
@@ -80,9 +84,9 @@
             .white {
                 color: rgba(0, 0, 0, 0.5) !important;
             }
-         
-             
-         
+
+
+
 
         }
 
@@ -187,10 +191,12 @@
         } */
 
 
-.pic_3{width: 100%;
-height: 100%;
-background-position: center;
-background-size: contain;}
+        .pic_3 {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+        }
 
 
         .text4 {
@@ -248,7 +254,7 @@ background-size: contain;}
             width: 1110px;
             background-color: saddlebrown;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             color: snow;
 
         }
@@ -551,7 +557,7 @@ background-size: contain;}
 
         .bbb {
             width: 100%;
-            height:100vh;
+            height: 100vh;
             background-image: url(./img/84.jpg);
             background-size: cover;
             background-position: center;
@@ -560,14 +566,16 @@ background-size: contain;}
 
 
 
- 
+
         .tall {
             width: 100%;
             /* background-color: rgb(247, 234, 207); */
 
-        } 
+        }
 
-#w2{width: 100%;}
+        #w2 {
+            width: 100%;
+        }
 
         .ttop {
             text-align: center;
@@ -593,7 +601,7 @@ background-size: contain;}
             border-right: 0.5px solid black;
             width: 100%;
             /* background-color: mediumorchid; */
-        background-color: burlywood;
+            background-color: burlywood;
         }
 
         .tright {
@@ -602,7 +610,7 @@ background-size: contain;}
             border: 1px solid black;
             border-left: 0.5px solid black;
             width: 100%;
-        background-color: burlywood;
+            background-color: burlywood;
 
             /* background-color: orange; */
         }
@@ -610,12 +618,13 @@ background-size: contain;}
         /* #qqww{
             background-position: center;
         } */
-        #aqaq {height: 100vh;
+        #aqaq {
+            height: 100vh;
             /* padding: 50px 0; */
         }
 
-        #aqaq iframe {  
-            
+        #aqaq iframe {
+
             width: 100%;
             height: 300px;
         }
@@ -643,7 +652,7 @@ background-size: contain;}
 
 
         .map {
-            width:100%;
+            width: 100%;
             height: 300px;
         }
 
@@ -697,34 +706,36 @@ background-size: contain;}
 
 
 
-/* 
+        /* 
 #w1{height: 100vh;} */
 
-.tall{margin: bottom  100px;}
-        .card-header{background-color: rgba(231, 195, 156, 0.5);}
+        .tall {
+            margin: bottom 100px;
+        }
 
-.card-deck{background-color: rgba(231, 195, 156, 0.5);}
-     .menuu{justify-self: 100vh;
-         background-color: rgba(231, 195, 156, 0.5);} 
+        .card-header {
+            background-color: rgba(231, 195, 156, 0.5);
+        }
 
+        .card-deck {
+            background-color: rgba(231, 195, 156, 0.5);
+        }
 
+        .menuu {
+            justify-self: 100vh;
+            background-color: rgba(231, 195, 156, 0.5);
+        }
     </style>
 
 </head>
 
 <body>
 
-
-
-
-
-
-
     <section class="section_1">
         <div class="row" style=" margin: 0;">
             <div class="col position-fixed" style="z-index: 20; padding: 0;">
                 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-op B">
-                    <a class="navbar-brand  " href="#">糖心蛋糕</a>
+                    <a class="navbar-brand " href="#" style="color: rgb(24, 141, 102);">糖心蛋糕</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -742,33 +753,27 @@ background-size: contain;}
                 </nav>
             </div>
         </div>
+        <div id="swi per_q3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="s1" class="swiper-slide"></div>
+                    <div id="s2" class="swiper-slide"></div>
+                    <div id="s3" class="swiper-slide"></div>
+                    <div id="s4" class="swiper-slide"></div>
+                    <div id="s5" class="swiper-slide"></div>
+                    <div id="s6" class="swiper-slide"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div> 
     </section>
 
 
-    <div id="swiper_q3">
-    
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div id="s1" class="swiper-slide"></div>
-                <div id="s2" class="swiper-slide"></div>
-                <div id="s3" class="swiper-slide"></div>
-                <div id="s4" class="swiper-slide"></div>
-                <div id="s5" class="swiper-slide"></div>
-                <div id="s6" class="swiper-slide"></div>
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-
     <!-- <div id="pcc" class="pii pic_1 col-12"></div> -->
 
-
-
-
-
-
-<!-- 
+    <!-- 
     <section id="section_3">
         <div id="q3" class="titt">
             <h3>
@@ -777,7 +782,7 @@ background-size: contain;}
         </div>
     
           <--Swiper -->
-        <!-- <div id="swiper_q3">
+    <!-- <div id="swiper_q3">
     
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -788,33 +793,18 @@ background-size: contain;}
                     <div id="s5" class="swiper-slide"></div>
                     <div id="s6" class="swiper-slide"></div>
                 </div> -->
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next"></div>
+    <!-- Add Arrows -->
+    <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
- --> 
-
-
-
-
+ -->
     <!-- <section>
         <div class="bbb">
         </div>
     </section>
  -->
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- <section class="section_1">
         <div class="container-fluid">
@@ -837,9 +827,7 @@ background-size: contain;}
 
     <section class="section_2">
         <div class="pic pic_2 parallax mark"></div>
-
         <div class="container ">
-
             <div class="row">
                 <div class="col-12 ">
                     <h3>關於糖心</h3>
@@ -851,22 +839,21 @@ background-size: contain;}
                             糖心歷史 <br>
                             創立於1998年<br>
                             為了想改變消費者對蛋糕品質之看法
-便領先業界以蛋白、蛋黃分開製作
-製做出品質精良、口味獨特的戚風蛋糕
-不但深獲當地人喜愛
-而後再研發出的蛋糕產品
-同時也帶動當地消費者喜愛吃精緻蛋糕的風潮
-近幾年｢糖心蛋糕｣不吝重資
-引進國外最新生產技術與機器設備
-秉持以客為尊的服務理念
-同時也打造一個溫馨、寬敞、舒適的購物環境
-提供多元化的服務
+                            便領先業界以蛋白、蛋黃分開製作
+                            製做出品質精良、口味獨特的戚風蛋糕
+                            不但深獲當地人喜愛
+                            而後再研發出的蛋糕產品
+                            同時也帶動當地消費者喜愛吃精緻蛋糕的風潮
+                            近幾年｢糖心蛋糕｣不吝重資
+                            引進國外最新生產技術與機器設備
+                            秉持以客為尊的服務理念
+                            同時也打造一個溫馨、寬敞、舒適的購物環境
+                            提供多元化的服務
                         </span>
-                 </div>
-            </div>
+                    </div>
+                </div>
                 <!-- 圖片 -->
                 <div class="col-12 col-md-5 col-xl-5">
-
                     <img class="pic_3" src="./img/525.jpg" alt="">
                 </div>
 
@@ -888,23 +875,18 @@ background-size: contain;}
                 </div>
                 <!-- 圖片 -->
                 <div class="col-12 col-md-5 col-xl-5">
-
                     <img class="pic_3" src="./img/331.jpg" alt="">
                 </div>
-
-
-
                 <div class="col-12 ">
                     <!-- <div class="text"> -->
                     <h3>最新消息</h3>
-
                 </div>
                 <div class="col-12 col-md-7 py-0">
                     <div id="q1" class="text5">
                         <span>
                             新 品 上 市 全 面 9 折<br>
                             3/28 芒果蛋糕 甜甜上市，<br>
-                            
+
                             嚴選肉質細嫩、香氣濃郁的愛文芒果，加上乳脂含量高的北海道高梨鮮奶油，將新鮮芒果的酸、香、甜與清新奶香氣揉合，
                             蛋糕本體是嚴選日本百年麵粉廠-日清製粉所出的保濕度高的紫羅蘭麵粉，一口咬下鬆軟且香氣十足，鮮奶油則是以北海道高梨鮮奶油打發，乳脂含量高，香醇不膩，配上屏東枋寮直送的愛文芒果，還有主廚手工熬製的酸甜芒果醬，口感讓人難忘。
 
@@ -912,17 +894,13 @@ background-size: contain;}
                     </div>
                 </div>
                 <div class="col-12 col-md-5 col-xl-5 ">
-
                     <img class="pic_3 " src="./img/18.jpg" alt="">
                 </div>
-
-
-
+            </div>
+        </div>
     </section>
 
-
-   
-        <!-- <a href="https://youtu.be/yXdKajwyPc8">   <div class="butte1"></div></a>
+    <!-- <a href="https://youtu.be/yXdKajwyPc8">   <div class="butte1"></div></a>
             <a href="https://youtu.be/8msm15D7R-g"><div class="butte2"></div></a>
           <a href="https://youtu.be/UQl9Fximj3g">  <div class="butte3"></div>
          </div>
@@ -1050,339 +1028,260 @@ background-size: contain;}
   
     </section> -->
 
-
-   
-
-
-
-<section>
-<div class="menuu"></div>
-    <div class="container_mm">
-        <div class="row">
-            <div class="col">
-
-
-    <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <h2>糖心蛋糕</h2>
-              </button>
-            </h2>
-          </div>
-      
-              
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-               <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-deck">
-                            <div class="card">
-                                <img src="./img/222.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">藍莓蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
+    <section>
+        <div class="menuu"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h2>糖心蛋糕</h2>
+                                    </button>
+                                </h2>
                             </div>
-                            <div class="card">
-                                <img src="./img/223.jpg" class="card-img-top" alt="...">
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <h5 class="card-title">莓果蛋糕 </h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/224.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">芋頭蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-        
-                            </div>
-                            <div class="card">
-                                <img src="./img/15.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">芒果蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/222.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">藍莓蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/223.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">莓果蛋糕 </h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/224.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芋頭蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/15.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芒果蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/100.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">水果裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/64.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">草莓裸蛋糕 </h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/65.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芒果裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/66.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">巧克力裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/86.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">咖啡千層蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/68.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">玫瑰千層蛋糕 </h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/69.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">抹茶蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/70.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">蝶豆花千層蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-                    <div class="col-12">
-                        <div class="card-deck">
-                            <div class="card">
-                                <img src="./img/100.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">水果裸蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/64.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">草莓裸蛋糕 </h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/65.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">芒果裸蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/66.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">巧克力裸蛋糕</h5>
-                                    <p class="card-text">6吋500元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card-deck">
-                            <div class="card">
-                                <img src="./img/86.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">咖啡千層蛋糕</h5>
-                                    <p class="card-text">6吋700元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/68.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">玫瑰千層蛋糕 </h5>
-                                    <p class="card-text">6吋700元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="./img/69.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">抹茶蛋糕</h5>
-                                    <p class="card-text">6吋700元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-        
-                            </div>
-                            <div class="card">
-                                <img src="./img/70.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">蝶豆花千層蛋糕</h5>
-                                    <p class="card-text">6吋700元</p>
-                                    <p class="card-text"><small class="text-muted">來電預約</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
                 </div>
             </div>
 
+        </div>
+    </section>
 
-       
-
-
-
-
-
-
-
-
-
-
-
-
+    <section id="aqaq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/yXdKajwyPc8?start=8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/8msm15D7R-g?start=3" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/UQl9Fximj3g" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/SvgEJlPnDtI?start=6" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/etyVJb1vw5w?start=4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/apVJyi729WI?start=5" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-  
-        
 
-       
-    </div>
-</div>
-</div>  
+        <div class="container btubox">
 
-
-
-          
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div></div>
-<section id="aqaq">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/yXdKajwyPc8?start=8" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/8msm15D7R-g?start=3" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/UQl9Fximj3g" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/SvgEJlPnDtI?start=6" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/etyVJb1vw5w?start=4" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
-            <div class="col-12 col-md-4">
-                <iframe src="https://www.youtube.com/embed/apVJyi729WI?start=5" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></div>
+        <div class="container btubox">
+
         </div>
-    </div>
-
-
-
-    <div class="container btubox">
-
-
-
-    </div>
-    <div class="container btubox">
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    </section>
 
     <section>
         <div id="w1" class="container">
             <div class="row">
                 <div class="col">
-
-                
-        <div class="tall pb-4">
-            <div class="ttop">
-                <h3>購物須知</h3>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div id="lt" class="col flex-wrap flex-sm-nowrap ">
-                        <!-- <div class="lt"> -->
-                        <div class="tleft  mb-4 mb-sm-0">
-                            <p>訂購方法 <i class="far fa-address-card"></i><br>
-                                1. 網路訂購需含三日工作天，如急需當日/ 隔日蛋糕，<br>
-                                請直接電話聯繫(04)1234-5678，會由店面夥伴為您服務 。<br>
-                                2. 週日店面公休，不開放取貨，還請見諒。<br>
-                                3. 店面取貨時間至PM9:00。<br>
-                                4.本店不提供宅配服務,一律店取,為保持蛋糕新鮮與外觀完整.<br>
-                                5.本店蛋糕一律6吋,不特製其他尺寸,不方便之處,敬請見諒.<br>
-                            </p>
+                    <div class="tall pb-4">
+                        <div class="ttop">
+                            <h3>購物須知</h3>
                         </div>
-                        <div class="tright  mb-sm-0">
-                            <p> 蛋糕保存方式 <i class="far fa-address-card"></i><br>
-                                「純戚風蛋糕」建議保存方式：取貨當日未食用完畢請放冷藏，<br>
-                                能夠再放置冷藏兩天。
-                                「鮮奶油」類蛋糕建議保存方式：取貨後一個半小時內放回冷藏，能夠放置兩天。<br>
-                                凡購買整顆蛋糕（純戚風、鮮奶油戚,夾餡蛋糕），將附上「餐盤2組」<br>
-                                與「蠟燭一份」還有(Happy Birthday插牌乙個）<br>
-                            </p>
+                        <div class="container">
+                            <div class="row">
+                                <div id="lt" class="col flex-wrap flex-sm-nowrap ">
+                                    <!-- <div class="lt"> -->
+                                    <div class="tleft  mb-4 mb-sm-0">
+                                        <p>訂購方法 <i class="far fa-address-card"></i><br>
+                                            1. 網路訂購需含三日工作天，如急需當日/ 隔日蛋糕，<br>
+                                            請直接電話聯繫(04)1234-5678，會由店面夥伴為您服務 。<br>
+                                            2. 週日店面公休，不開放取貨，還請見諒。<br>
+                                            3. 店面取貨時間至PM9:00。<br>
+                                            4.本店不提供宅配服務,一律店取,為保持蛋糕新鮮與外觀完整.<br>
+                                            5.本店蛋糕一律6吋,不特製其他尺寸,不方便之處,敬請見諒.<br>
+                                        </p>
+                                    </div>
+                                    <div class="tright  mb-sm-0">
+                                        <p> 蛋糕保存方式 <i class="far fa-address-card"></i><br>
+                                            「純戚風蛋糕」建議保存方式：取貨當日未食用完畢請放冷藏，<br>
+                                            能夠再放置冷藏兩天。
+                                            「鮮奶油」類蛋糕建議保存方式：取貨後一個半小時內放回冷藏，能夠放置兩天。<br>
+                                            凡購買整顆蛋糕（純戚風、鮮奶油戚,夾餡蛋糕），將附上「餐盤2組」<br>
+                                            與「蠟燭一份」還有(Happy Birthday插牌乙個）<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
                 <div id="w3" class="container">
                     <div class="row">
-
-                <div class="map col">
-
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1409814282924!2d120.68257731498932!3d24.166787984385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de96a0520b%3A0xa558b8e284d3a5cb!2z6Ie65Lit5rCR55y-5oqA6Jed6KOc57-S54-tLeiBt-iok-aVmeiCsuS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1587629163464!5m2!1szh-TW!2stw"
-                        width="1110" height="300" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
-
-                </div></div></div>
+                        <div class="map col">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1409814282924!2d120.68257731498932!3d24.166787984385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de96a0520b%3A0xa558b8e284d3a5cb!2z6Ie65Lit5rCR55y-5oqA6Jed6KOc57-S54-tLeiBt-iok-aVmeiCsuS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1587629163464!5m2!1szh-TW!2stw"
+                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-
-        </div>
     </section>
-
-    <section>
-        <a href="#">
-            <div class="back">
-
-            </div>
-        </a>
-    </section>
-
-
-
-
-
 
     <footer>
         <div id="q5" class="foot">
@@ -1408,19 +1307,21 @@ background-size: contain;}
                         信箱:cake@gmail.com<br>
                     </p>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </footer>
-    </div>
-    </div>
+
+    <section>
+        <a href="#">
+            <div class="back">
+
+            </div>
+        </a>
+    </section>
 
 
-   
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1439,7 +1340,7 @@ background-size: contain;}
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
 
-    
+
 
 
 
@@ -1451,22 +1352,22 @@ background-size: contain;}
 
         var swiper = new Swiper('#swiper_q3 .swiper-container', {
             loop: true,
-      
+
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
-               
+
             },
             navigation: {
                 nextEl: '#swiper_q3 .swiper-button-next',
                 prevEl: '#swiper_q3 .swiper-button-prev',
-              
+
             },
-  
-            
+
+
         });
     </script>
-    
+
 
 
 
