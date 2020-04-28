@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
- 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -17,9 +17,7 @@
 
 
 
-
     <style>
-       
         * {
             box-sizing: border-box;
             position: relative;
@@ -293,6 +291,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* .mark{width: 1
         00%;
 
@@ -366,7 +378,7 @@
 
 
         #s1 {
-            background-image: url(./img/13.png);
+            background-image: url(./img/961.jpg);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -374,7 +386,7 @@
         }
 
         #s2 {
-            background-image: url(./img/342.jpg);
+            background-image: url(./img/84.jpg);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -390,7 +402,7 @@
         }
 
         #s4 {
-            background-image: url(./img/88.jpg);
+            background-image: url(./img/121.jpg);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -399,7 +411,7 @@
         }
 
         #s5 {
-            background-image: url(./img/35.jpg);
+            background-image: url(./img/965.jpg);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -407,7 +419,7 @@
         }
 
         #s6 {
-            background-image: url(./img/665.jpg);
+            background-image: url(./img/960.jpg);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -598,7 +610,7 @@
             border-right: 0.5px solid black;
             width: 100%;
             /* background-color: mediumorchid; */
-            background-color: burlywood;
+            /* background-color: burlywood; */
         }
 
         .tright {
@@ -607,7 +619,7 @@
             border: 1px solid black;
             border-left: 0.5px solid black;
             width: 100%;
-            background-color: burlywood;
+            /* background-color: burlywood; */
 
             /* background-color: orange; */
         }
@@ -615,11 +627,7 @@
         /* #qqww{
             background-position: center;
         } */
-        #aqaq {
-            /* height: 100vh; */
-            /* padding: 50px 0; */
-        }
-
+      
         #aqaq iframe {
 
             width: 100%;
@@ -629,6 +637,37 @@
 
 
 
+
+
+        .pic4 {
+            /* background-image: url(./img/342.jpg); */
+            background-image: url(./img/1133.png);
+
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+
+
+#d1{background-image: url(./img/1133.png);
+background-size: cover;
+width: 100%;
+height: 500px;
+}
+#d2{background-image: url(./img/146.png);
+background-size: contain;}
+
+
+/* #d3{background-image: url(./img/11211.png);
+background-size: contain;}
+
+
+#d4{background-image: url(./img/113.png);
+background-size: contain;} */
 
 
 
@@ -708,9 +747,16 @@
 
         .tall {
             margin: bottom 100px;
+
+            
         }
 
         .card-header {
+            height: 100px;
+            width: 200px;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
             background-color: rgba(231, 195, 156, 0.5);
         }
 
@@ -722,6 +768,187 @@
             justify-self: 100vh;
             background-color: rgba(231, 195, 156, 0.5);
         }
+
+        /* lightbox */
+        .row>.column {
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create four equal columns that floats next to eachother */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 100px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Hide the slides by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Caption text */
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        img.demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+
+
+/* 頁尾的輪播 */
+        body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container.end {
+      width: 100%;
+      height: 500px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 </head>
@@ -750,7 +977,7 @@
                 </nav>
             </div>
         </div>
-        <div id="swi per_q3">
+        <div id="swiper_q3">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div id="s1" class="swiper-slide"></div>
@@ -764,11 +991,25 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-        </div> 
+        </div>
     </section>
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="section_2">
         <div class="pic pic_2 parallax mark"></div>
         <div class="container ">
@@ -844,7 +1085,7 @@
         </div>
     </section>
 
-    
+
 
     <section>
         <div class="menuu"></div>
@@ -857,7 +1098,7 @@
                                 <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <h2>糖心蛋糕</h2>
+                                        <h2>糖心蛋糕 MENU</h2>
                                     </button>
                                 </h2>
                             </div>
@@ -994,6 +1235,7 @@
 
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1004,7 +1246,7 @@
         </div>
     </section>
 
-    <section id="aqaq">
+    <!-- <section id="aqaq">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
@@ -1048,7 +1290,166 @@
         <div class="container btubox">
 
         </div>
+    </section> -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="./img/966.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/960.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/961.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/962.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+
+                <div class="column">
+                    <img src="./img/322.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/342.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+                
+                <div class="column">
+                    <img src="./img/353.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/321.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="./img/211.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="./img/212.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 /8</div>
+                        <img src="./img/213.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="./img/214.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="./img/215.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="./img/342.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7/ 8</div>
+                        <img src="./img/217.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8/8</div>
+                        <img src="./img/218.png" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div>
+                        <div class="column">
+                            <img class="demo" src="./img/966.jpg" onclick="currentSlide(1)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/960.jpg" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/961.jpg" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/962.jpg" onclick="currentSlide(4)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/322.jpg" onclick="currentSlide(5)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/342.jpg" onclick="currentSlide(6)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/353.jpg" onclick="currentSlide(7)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/321.jpg" onclick="currentSlide(8)" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section>
         <div id="w1" class="container">
@@ -1086,6 +1487,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div id="w3" class="container">
                     <div class="row">
                         <div class="map col">
@@ -1100,6 +1502,55 @@
 
         </div>
     </section>
+
+    <section>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+<!-- <section>
+    <div class="container-fuil">
+        <div class="row">
+            <div class="pic4 col"></div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<!-- Swiper 頁尾的輪播圖 -->
+<div class="swiper-container end">
+    <div  class="swiper-wrapper">
+      <div id="d1" class="swiper-slide"></div>
+      <div id="d2" class="swiper-slide"></div>
+      <!-- <div id="d3" class="swiper-slide"></div>
+      <div id="d4" class="swiper-slide"></div> -->
+      <!-- <div id="d5" class="swiper-slide"></div>
+      <div id="d6" class="swiper-slide"></div>
+      <div id="d7" class="swiper-slide"></div>
+      <div id="d8" class="swiper-slide"></div>
+      <div id="d9" class="swiper-slide"></div>
+      <div id="d10" class="swiper-slide"></div> -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+
+
 
     <footer>
         <div id="q5" class="foot">
@@ -1136,6 +1587,8 @@
             </div>
         </a>
     </section>
+
+
 
 
 
@@ -1209,7 +1662,74 @@
 
             }
         })
+
+        // lightbox
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
     </script>
+
+
+
+
+
+
+
+
+
+<!-- 頁尾的輪播圖 -->
+<!-- Swiper JS -->
+<script src="../package/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.end.swiper-container', {
+      loop:true,
+      autoplay: {
+    delay: 5000,
+  },
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+  });
+</script>
+
+
+
 
 
 </body>
