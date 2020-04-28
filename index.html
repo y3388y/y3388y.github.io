@@ -54,7 +54,7 @@
         }
 
         .bg-op-dark {
-            background-color: rgb(202, 140, 82) !important;
+            background-color: rgba(202, 140, 82, 0.918) !important;
         }
 
         .navbar-light .navbar-nav .nav-link {
@@ -222,19 +222,21 @@
         .textt1 {
             color: snow;
             text-align: center;
-
+font-family: 'Times New Roman', Times, serif;
+margin-top: 30px;
         }
 
 
         .textt2 {
             color: snow;
             text-align: center;
-
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .textt3 {
             color: aliceblue;
             text-align: center;
+            font-family: 'Times New Roman', Times, serif; 
         }
 
         .foot {
@@ -243,6 +245,7 @@
             display: flex;
             justify-content: center;
             color: snow;
+        margin-bottom: 10px;
         }
 
         .footBox {
@@ -368,7 +371,7 @@
         }
 
         :hover.back {
-            background-color: rgb(252, 136, 5);
+            background-color: rgba(252, 187, 8, 0.863);
             border-radius: 20%;
         }
 
@@ -654,12 +657,14 @@
 
 
 #d1{background-image: url(./img/1133.png);
-background-size: cover;
-width: 100%;
-height: 500px;
+
+/* width: 100%;
+height: 500px; */
 }
-#d2{background-image: url(./img/146.png);
-background-size: contain;}
+#d2{background-image: url(./img/3312.png);
+background-size: contain;
+
+}
 
 
 /* #d3{background-image: url(./img/11211.png);
@@ -816,7 +821,7 @@ background-size: contain;} */
             position: absolute;
             top: 100px;
             right: 25px;
-            font-size: 35px;
+            font-size: 60px;
             font-weight: bold;
         }
 
@@ -910,7 +915,7 @@ background-size: contain;} */
     }
     .swiper-container.end {
       width: 100%;
-      height: 500px;
+      height:250px;
     }
     .swiper-slide {
       text-align: center;
@@ -969,8 +974,8 @@ background-size: contain;} */
                         <div class="navbar-nav ">
                             <a id="a1 " class="nav-item nav-link " href="#">首頁 </a>
                             <a id="a2 " class="nav-item nav-link " href="#q1">關於糖心</a>
-                            <a id="a3 " class="nav-item nav-link " href="#aqaq">影片蛋糕</a>
-                            <a id="a4 " class="nav-item nav-link " href="#q3">糖心蛋糕</a>
+                            <a id="a3 " class="nav-item nav-link " href="#lightbox">Lightbox</a>
+                            <a id="a4 " class="nav-item nav-link " href="#mu">糖心蛋糕</a>
                             <a id="a5 " class="nav-item nav-link " href="#q5">頁尾</a>
                         </div>
                     </div>
@@ -1088,7 +1093,7 @@ background-size: contain;} */
 
 
     <section>
-        <div class="menuu"></div>
+        <div id="mu" class="menuu"></div>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -1293,8 +1298,11 @@ background-size: contain;} */
     </section> -->
 
     <section>
-        <div class="container">
+        
+
+        <div id="lightbox" class="container">
             <div class="row">
+                
                 <div class="column">
                     <img src="./img/966.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
                 </div>
@@ -1307,7 +1315,7 @@ background-size: contain;} */
                 <div class="column">
                     <img src="./img/962.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
                 </div>
-
+<!-- 
                 <div class="column">
                     <img src="./img/322.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
                 </div>
@@ -1321,18 +1329,21 @@ background-size: contain;} */
                 <div class="column">
                     <img src="./img/321.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
                 </div>
-            </div>
+            </div> -->
+            
+
+                
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
 
                     <div class="mySlides">
-                        <div class="numbertext">1 / 8</div>
+                        <div class="numbertext">1 / 4</div>
                         <img src="./img/211.png" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">2 / 8</div>
+                        <div class="numbertext">2 / 4</div>
                         <img src="./img/212.png" style="width:100%">
                     </div>
 
@@ -1342,11 +1353,11 @@ background-size: contain;} */
                     </div>
 
                     <div class="mySlides">
-                        <div class="numbertext">4 / 8</div>
+                        <div class="numbertext">4 / 4</div>
                         <img src="./img/214.png" style="width:100%">
                     </div>
 
-                    <div class="mySlides">
+                    <!-- <div class="mySlides">
                         <div class="numbertext">5 / 8</div>
                         <img src="./img/215.png" style="width:100%">
                     </div>
@@ -1362,7 +1373,7 @@ background-size: contain;} */
                     <div class="mySlides">
                         <div class="numbertext">8/8</div>
                         <img src="./img/218.png" style="width:100%">
-                    </div>
+                    </div> -->
 
                     <!-- Next/previous controls -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -1391,7 +1402,7 @@ background-size: contain;} */
                             <img class="demo" src="./img/962.jpg" onclick="currentSlide(4)" alt="">
                         </div>
 
-                        <div class="column">
+                        <!-- <div class="column">
                             <img class="demo" src="./img/322.jpg" onclick="currentSlide(5)" alt="">
                         </div>
 
@@ -1405,7 +1416,7 @@ background-size: contain;} */
 
                         <div class="column">
                             <img class="demo" src="./img/321.jpg" onclick="currentSlide(8)" alt="">
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -1415,7 +1426,7 @@ background-size: contain;} */
 
 
         
-
+    
     </section>
 
 
