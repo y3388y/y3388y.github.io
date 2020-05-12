@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+
+        .nav{color: rgb(65, 56, 20);
+        background-color: rgb(172, 148, 16);
+padding-left: 200px;
+
+        font-size: 30px;
+        margin-bottom: 10px;
+        }
+        .body {
+            display: flex;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        /* .photo1 {
+            width: 350px;
+            height: 600px;
+
+            background-size: contain;
+            background-image: url(./img/wireframe.jpg);
+        } */
+       
+                /* .photo2 {
+
+            width: 350px;
+            height: 600px;
+            background-size: cover;
+            background-image: url(./img/layout.jpg);
+
+        }
+
+        .photo3 {
+            width: 350px;
+            height:600px;
+            background-size: cover;
+            background-image: url(./img/layout1.jpg);
+
+        } */
+
+        
+        .pic img{width: 370px; height: 550px; background-size: cover;}
+        .pic{width:350px; height:600px; overflow:hidden;}
+.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+.pic img:hover{transform:scale(1.2,1.2);}
+
+.footer{background-color: rgb(172, 148, 16);
+color: rgb(65, 56, 20);
+text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fuil">
+    <div class="nav">網頁設計</div></div>
+
+    <div class="container">
+        <div class="content">
+            <div class="row">
+
+                <div class="col-12 col-md-5 col-xl-4">
+                    <div class="pic"><img src="./img/wireframe.jpg" /></div>
+                    <!-- <div class="photo1"> </div> -->
+                </div>
+
+                <div class="col-12 col-md-5 col-xl-4">
+                    <div class="pic"><img src="./img/layout.jpg" /></div>
+                    <!-- <div class="photo2"> </div> -->
+                </div>
+                <div class="col-12 col-md-5 col-xl-4">
+                    
+                    <div class="pic"><img src="./img/layout1.jpg" /></div>
+                    <!-- <div class="photo3"> </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="footer">
+    hover效果
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
