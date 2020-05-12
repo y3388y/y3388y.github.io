@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- <link rel="stylesheet" href="../package/css/swiper.min.css"> -->
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .all {
+            /* width: 100%; */
+            background-color: rgb(44, 209, 57);
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        .navbar-nav {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            justify-content: center;
+            margin: 0 auto;
+            transform: translateX(-22.5%);
+
+        }
+
+
+        .bg-op {
+            background-color: rgba(0, 0, 0, 0.199) !important;
+        }
+
+        .bg-op-dark {
+            background-color: rgba(202, 140, 82, 0.918) !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(7, 109, 150);
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: rgb(231, 20, 238);
+        }
+
+        @media(max-width: 960px) {
+            .navbar-nav {
+                margin: 0 auto;
+                transform: unset;
+
+            }
+
+            .bg-op {
+                background-color: rgb(255, 255, 255) !important;
+            }
+
+            .white {
+                color: rgba(0, 0, 0, 0.5) !important;
+            }
+
+
+
+
+        }
+
+        #con1 {
+            width: 600px;
+        }
+
+        /* .togger { */
+        /* width: 50px; */
+
+
+        /* } */
+        .section_1 {
+            width: 100%;
+        }
+
+        .section_2 {
+            position: relative;
+            width: 100%;
+            /* padding: 60px 0; */
+            display: flex;
+        }
+
+        .boxx1 {
+            display: flex;
+        }
+
+
+
+        .tex {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 300px;
+            color: rgb(14, 7, 2);
+            background-color: rgba(236, 177, 236, 0.5);
+        }
+
+        /* .pic1140 {
+            width: 1140px;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        } */
+        .pii {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+
+        #pcc {
+            position: relative;
+            margin: auto;
+        }
+
+        .pic {
+            width: 100%;
+            /* height: 200%; */
+            background-size: contain;
+            background-position: center;
+            position: relative;
+        }
+
+        .pic_1 {
+
+
+            /* background-image: url(./img/221.jpg); */
+            background-image: url(./img/11.jpg);
+
+
+
+        }
+
+        .pic_2 {
+            width: 100%;
+            background-image: url(./img/20.jpg);
+            /* background-image: url(./img/134.jpg); */
+            background-size: cover;
+        }
+
+        /* .pic_2{
+    background-color: rgb(167, 106, 28);
+} */
+
+
+
+
+        /* .pic_3 {
+            width: 100%;
+
+            background-image: url(./img/87.jpg);
+            background-size: cover;
+        } */
+
+
+        .pic_3 {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+        }
+
+
+        .text4 {
+            text-align: center;
+            background-color: rgba(236, 177, 236, 0.5);
+            padding: 50px;align-items: center;
+        }
+
+        .text5 {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgba(253, 253, 253, 0.6);
+            padding: 50px;
+            font-size: 18px;
+/* align-items: center; */
+        }
+
+        .text6 {
+            width: 100%;
+
+            text-align: left;
+            background-color: rgba(253, 253, 253, 0.6);
+            padding: 50px;
+            height: 300px;align-items: center;
+
+        }
+
+        .textt1 {
+            color: snow;
+            text-align: center;
+font-family: 'Times New Roman', Times, serif;
+margin-top: 30px;
+        }
+
+
+        .textt2 {
+            color: snow;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .textt3 {
+            color: aliceblue;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif; 
+        }
+
+        .foot {
+            width: 100%;
+            background-color: saddlebrown;
+            display: flex;
+            justify-content: center;
+            color: snow;
+        margin-bottom: 10px;
+        }
+
+        .footBox {
+            width: 1110px;
+            background-color: saddlebrown;
+            display: flex;
+            justify-content: space-around;
+            color: snow;
+
+        }
+
+
+
+        .parallax {
+            background-attachment: fixed;
+            opacity: 0.2px;
+            position: relative;
+        }
+
+        .mark {
+            width: 100%;
+            opacity: 0.65;
+            position: absolute;
+            z-index: -1;
+            top: -60px;
+        }
+
+        .text {
+            text-align: center;
+            color: rgb(51, 34, 7);
+
+        }
+
+        .box {
+            text-align: center;
+            color: rgb(63, 35, 5);
+        }
+
+        .cardss {
+            width: 800px;
+            height: 100px;
+            display: flex;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* .mark{width: 1
+        00%;
+
+            height: 100vh;opacity: 0.65;} */
+
+
+        /* #pic1{} */
+
+        .cards {
+            position: absolute;
+
+
+        }
+
+        .card1 {
+            display: flex;
+        }
+
+        .card2 {
+            background-color: rgba(231, 195, 156, 0.5);
+            width: 500px;
+            height: 300px;
+
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+        }
+        
+        img {
+            width:100%;
+            /* height: 300px; */
+        }
+
+
+        .fas {
+            width: 50px;
+            height: 50px;
+            background-color: slateblue;
+            position: absolute;
+            top: 50px;
+            left: 500px;
+        }
+
+        .back {
+            background-image: url(./img/top.png);
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            /* background-color: rgb(233, 148, 20); */
+            padding: 10px;
+            position: fixed;
+            z-index: 9999;
+            right: 30px;
+            bottom: 60px;
+
+
+        }
+
+        :hover.back {
+            background-color: rgba(252, 187, 8, 0.863);
+            border-radius: 20%;
+        }
+
+        .swiper-wrapper {
+            height: 100vh;
+        }
+
+
+        #s1 {
+            background-image: url(./img/961.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #s2 {
+            background-image: url(./img/84.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #s3 {
+            background-image: url(./img/325.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #s4 {
+            background-image: url(./img/121.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #s5 {
+            background-image: url(./img/965.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #s6 {
+            background-image: url(./img/960.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .btubox {
+            /* width: 100%; */
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .butte1 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/1.png);
+        }
+
+        .butte2 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/2.png);
+        }
+
+        .butte3 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/3.png);
+        }
+
+        .butte4 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/4.png);
+        }
+
+        .butte5 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/5.png);
+        }
+
+        .butte6 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-image: url(./img/6.png);
+        }
+
+
+
+
+
+        #a1 {
+            background-image: url(./img/353.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a2 {
+            background-image: url(./img/50.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a3 {
+            background-image: url(./img/4774.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a4 {
+            background-image: url(./img/344.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a5 {
+            background-image: url(./img/321.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a6 {
+            background-image: url(./img/328.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+
+        #a7 {
+            background-image: url(./img/351.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a8 {
+            background-image: url(./img/329.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a9 {
+            background-image: url(./img/353.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #a10 {
+            background-image: url(./img/320.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+
+
+
+        /* 
+        .btt {
+            width: 100%;
+            height: 500px;
+            background-image: url(./img/101.png);
+        } */
+
+
+
+
+        .bbb {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./img/84.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+
+
+        .tall {
+            width: 100%;
+            /* background-color: rgb(247, 234, 207); */
+
+        }
+
+        #w2 {
+            width: 100%;
+        }
+
+        .ttop {
+            text-align: center;
+            /* background-color: lightpink; */
+        }
+
+
+        #lt {
+
+            text-align: left;
+            padding: 10px;
+
+            width: 100%;
+            /* background-color: palegoldenrod; */
+            display: flex;
+            ;
+        }
+
+        .tleft {
+            padding: 20px;
+            /* border-style: solid; */
+            border: 1px solid black;
+            border-right: 0.5px solid black;
+            width: 100%;
+            /* background-color: mediumorchid; */
+            /* background-color: burlywood; */
+        }
+
+        .tright {
+            padding: 20px;
+            /* border-style: solid; */
+            border: 1px solid black;
+            border-left: 0.5px solid black;
+            width: 100%;
+            /* background-color: burlywood; */
+
+            /* background-color: orange; */
+        }
+
+        /* #qqww{
+            background-position: center;
+        } */
+      
+        #aqaq iframe {
+
+            width: 100%;
+            height: 300px;
+        }
+
+
+
+
+
+
+        .pic4 {
+            /* background-image: url(./img/342.jpg); */
+            background-image: url(./img/1133.png);
+
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+
+
+#d1{background-image: url(./img/1134.jpg);
+/* background-size: contain; */
+/* width: 100%;
+height: 500px; */
+}
+#d2{background-image: url(./img/1555.jpg);
+/* background-size: contain; */
+
+}
+
+
+/* #d3{background-image: url(./img/11211.png);
+background-size: contain;}
+
+
+#d4{background-image: url(./img/113.png);
+background-size: contain;} */
+
+
+
+
+
+        #section_4 .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            /* padding-bottom: 50px; */
+        }
+
+        #section_4 .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+
+        .map {
+            width: 100%;
+            height: 300px;
+        }
+
+
+
+        /* 第二
+        次輪播 */
+
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+
+        /* 
+#w1{height: 100vh;} */
+
+        .tall {
+            margin: bottom 100px;
+
+            
+        }
+
+        .card-header {
+            height: 100px;
+            width: 200px;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            background-color: rgba(231, 195, 156, 0.5);
+        }
+
+        .card-deck {
+            background-color: rgba(231, 195, 156, 0.5);
+        }
+
+        .menuu {
+            justify-self: 100vh;
+            background-color: rgba(231, 195, 156, 0.5);
+        }
+
+        /* lightbox */
+        .row>.column {
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create four equal columns that floats next to eachother */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 55px;
+            right: 25px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Hide the slides by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Caption text */
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        img.demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+
+
+/* 頁尾的輪播 */
+        body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container.end {
+      width: 100%;
+      height:250px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <section class="section_1">
+        <div class="row" style=" margin: 0;">
+            <div class="col position-fixed" style="z-index: 20; padding: 0;">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-op B">
+                    <a class="navbar-brand " href="#" style="color: rgb(9, 127, 136);">糖心蛋糕</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a id="a1 " class="nav-item nav-link " href="#">首頁 </a>
+                            <a id="a2 " class="nav-item nav-link " href="#q1">關於糖心</a>
+                            <a id="a3 " class="nav-item nav-link " href="#lightbox">Lightbox</a>
+                            <a id="a4 " class="nav-item nav-link " href="#mu">糖心蛋糕</a>
+                            <a id="a5 " class="nav-item nav-link " href="#q5">頁尾</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="swiper_q3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="s1" class="swiper-slide"></div>
+                    <div id="s2" class="swiper-slide"></div>
+                    <div id="s3" class="swiper-slide"></div>
+                    <div id="s4" class="swiper-slide"></div>
+                    <div id="s5" class="swiper-slide"></div>
+                    <div id="s6" class="swiper-slide"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section>
+        <img src="./img/33224.gif">
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="section_2">
+        <!-- <div class="pic pic_2 parallax mark"></div> -->
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 ">
+                    <h3>關於糖心</h3>
+                </div>
+                <!-- 文字 -->
+                <div class="col-12 col-md-7 py-0">
+                    <div id="q1" class="text5">
+                        <span>
+                            糖心歷史 <br>
+                            創立於1998年<br>
+                            為了想改變消費者對蛋糕品質之看法
+                            便領先業界以蛋白、蛋黃分開製作
+                            製做出品質精良、口味獨特的戚風蛋糕
+                            不但深獲當地人喜愛
+                            而後再研發出的蛋糕產品
+                            同時也帶動當地消費者喜愛吃精緻蛋糕的風潮
+                            近幾年｢糖心蛋糕｣不吝重資
+                            引進國外最新生產技術與機器設備
+                            秉持以客為尊的服務理念
+                            同時也打造一個溫馨、寬敞、舒適的購物環境
+                            提供多元化的服務
+                        </span>
+                    </div>
+                </div>
+                <!-- 圖片 -->
+                <div class="col-12 col-md-5 col-xl-5">
+                    <img class="pic_3" src="./img/525.jpg" alt="">
+                </div>
+
+                <!-- 主題：幸福糖心 -->
+                <div class="col-12">
+                    <h3>幸福糖心</h3>
+                </div>
+                <!-- 文字 -->
+                <div class="col-12 col-md-7 py-0">
+                    <div id="q1" class="text5">
+                        <span>
+                            傳遞幸福<br>
+                            有糖心的地方就有令人一再回味的幸福感動。<br>
+                            我們像老朋友般陪伴每個人經歷重要時光，<br>
+                            無論是彌月的祝福、婚禮囍事或是做為伴手禮，<br>
+                            糖心千變萬化的達人滋味，總是大家最滿足的幸福饗宴。
+                            奶奶總在我手心裡放上塊蛋糕，那捨不得吃的美味。<br>
+                            它陪我度過童年伴我成長。這塊小小的蛋糕不僅代表奶奶的親情<br>
+                            更代表人們成長中每一次的重要時刻。無論思念誰，無論多遠，<br>
+                            有糖心蛋糕陪伴。這份記憶的傳承，讓更多人們感受到的好滋味。<br>
+                        </span>
+                    </div>
+                </div>
+                <!-- 圖片 -->
+                <div class="col-12 col-md-5 col-xl-5">
+                    <img class="pic_3" src="./img/331.jpg" alt="">
+                </div>
+                <div class="col-12 ">
+                    <!-- <div class="text"> -->
+                    <h3>最新消息</h3>
+                </div>
+                <div class="col-12 col-md-7 py-0">
+                    <div id="q1" class="text5">
+                        <span>
+                            新 品 上 市 全 面 9 折<br>
+                            3/28 芒果蛋糕 甜甜上市，<br>
+
+                            嚴選肉質細嫩、香氣濃郁的愛文芒果，加上乳脂含量高的北海道高梨鮮奶油，將新鮮芒果的酸、香、甜與清新奶香氣揉合，
+                            蛋糕本體是嚴選日本百年麵粉廠-日清製粉所出的保濕度高的紫羅蘭麵粉，一口咬下鬆軟且香氣十足，鮮奶油則是以北海道高梨鮮奶油打發，乳脂含量高，香醇不膩，配上屏東枋寮直送的愛文芒果，還有主廚手工熬製的酸甜芒果醬，口感讓人難忘。
+
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-xl-5 ">
+                    <img class="pic_3 " src="./img/18.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div id="mu" class="menuu"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h2>糖心蛋糕 MENU</h2>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/222.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">藍莓蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/223.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">莓果蛋糕 </h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/224.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芋頭蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/15.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芒果蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/100.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">水果裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/64.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">草莓裸蛋糕 </h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/65.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">芒果裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/66.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">巧克力裸蛋糕</h5>
+                                                            <p class="card-text">6吋500元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <img src="./img/86.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">咖啡千層蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/68.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">玫瑰千層蛋糕 </h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/69.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">抹茶蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="./img/70.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">蝶豆花千層蛋糕</h5>
+                                                            <p class="card-text">6吋700元</p>
+                                                            <p class="card-text"><small class="text-muted">來電預約</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section id="aqaq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/yXdKajwyPc8?start=8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/8msm15D7R-g?start=3" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/UQl9Fximj3g" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/SvgEJlPnDtI?start=6" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/etyVJb1vw5w?start=4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.youtube.com/embed/apVJyi729WI?start=5" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container btubox">
+
+        </div>
+        <div class="container btubox">
+
+        </div>
+    </section> -->
+
+    <section>
+        
+
+        <div id="lightbox" class="container">
+            <div class="row">
+                
+                <div class="column">
+                    <img src="./img/966.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/960.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/961.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/962.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+<!-- 
+                <div class="column">
+                    <img src="./img/322.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/342.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+                
+                <div class="column">
+                    <img src="./img/353.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./img/321.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+            </div> -->
+            
+
+                
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./img/211.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./img/212.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 /8</div>
+                        <img src="./img/213.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./img/214.png" style="width:100%">
+                    </div>
+
+                    <!-- <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="./img/215.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="./img/342.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7/ 8</div>
+                        <img src="./img/217.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8/8</div>
+                        <img src="./img/218.png" style="width:100%">
+                    </div> -->
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div>
+                        <div class="container">
+                         
+<div class="row">
+    <div class="col">
+
+                            
+                        <div class="column ">
+                           
+                            <img class="demo" src="./img/966.jpg" onclick="currentSlide(1)" alt="">
+                        </div>
+
+
+                        <div class="column">
+                            <img class="demo" src="./img/960.jpg" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/961.jpg" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/962.jpg" onclick="currentSlide(4)" alt="">
+                        </div>
+
+                        <!-- <div class="column">
+                            <img class="demo" src="./img/322.jpg" onclick="currentSlide(5)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/342.jpg" onclick="currentSlide(6)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/353.jpg" onclick="currentSlide(7)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="./img/321.jpg" onclick="currentSlide(8)" alt="">
+                        </div> -->
+
+                    </div></div>
+                </div>
+                </div>
+            </div>
+
+</div>
+
+        
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div id="w1" class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="tall pb-4">
+                        <div class="ttop">
+                            <h3>購物須知</h3>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div id="lt" class="col flex-wrap flex-sm-nowrap ">
+                                    <!-- <div class="lt"> -->
+                                    <div class="tleft  mb-4 mb-sm-0">
+                                        <p>訂購方法 <i class="far fa-address-card"></i><br>
+                                            1. 網路訂購需含三日工作天，如急需當日/ 隔日蛋糕，<br>
+                                            請直接電話聯繫(04)1234-5678，會由店面夥伴為您服務 。<br>
+                                            2. 週日店面公休，不開放取貨，還請見諒。<br>
+                                            3. 店面取貨時間至PM9:00。<br>
+                                            4.本店不提供宅配服務,一律店取,為保持蛋糕新鮮與外觀完整.<br>
+                                            5.本店蛋糕一律6吋,不特製其他尺寸,不方便之處,敬請見諒.<br>
+                                        </p>
+                                    </div>
+                                    <div class="tright  mb-sm-0">
+                                        <p> 蛋糕保存方式 <i class="far fa-address-card"></i><br>
+                                            「純戚風蛋糕」建議保存方式：取貨當日未食用完畢請放冷藏，<br>
+                                            能夠再放置冷藏兩天。
+                                            「鮮奶油」類蛋糕建議保存方式：取貨後一個半小時內放回冷藏，能夠放置兩天。<br>
+                                            凡購買整顆蛋糕（純戚風、鮮奶油戚,夾餡蛋糕），將附上「餐盤2組」<br>
+                                            與「蠟燭一份」還有(Happy Birthday插牌乙個）<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="w3" class="container">
+                    <div class="row">
+                        <div class="map col">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1409814282924!2d120.68257731498932!3d24.166787984385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de96a0520b%3A0xa558b8e284d3a5cb!2z6Ie65Lit5rCR55y-5oqA6Jed6KOc57-S54-tLeiBt-iok-aVmeiCsuS4reW_gw!5e0!3m2!1szh-TW!2stw!4v1587629163464!5m2!1szh-TW!2stw"
+                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+<!-- <section>
+    <div class="container-fuil">
+        <div class="row">
+            <div class="pic4 col"></div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<!-- Swiper 頁尾的輪播圖 -->
+<div class="swiper-container end">
+    <div  class="swiper-wrapper">
+      <div id="d1" class="swiper-slide"></div>
+      <div id="d2" class="swiper-slide"></div>
+      <!-- <div id="d3" class="swiper-slide"></div>
+      <div id="d4" class="swiper-slide"></div> -->
+      <!-- <div id="d5" class="swiper-slide"></div>
+      <div id="d6" class="swiper-slide"></div>
+      <div id="d7" class="swiper-slide"></div>
+      <div id="d8" class="swiper-slide"></div>
+      <div id="d9" class="swiper-slide"></div>
+      <div id="d10" class="swiper-slide"></div> -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="q5" class="foot">
+            <div class="footBox ">
+                <div class="textt1">
+                    <p>頁尾 版權聲明 </p>
+                </div>
+
+                <div class="textt2">
+                    <P>
+                        營業時間<br>
+                        週二~周日11:00~AM-9:30PM<br>
+                        週一公休<br>
+                        Copyright © Designed by Cyberbiz.<br>
+                    </P>
+                </div>
+
+                <div class="textt3">
+                    <p>
+                        聯絡方式<br>
+                        電話:04-12345678<br>
+                        地址:台中市北屯區崇德路<br>
+                        信箱:cake@gmail.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section>
+        <a href="#">
+            <div class="back">
+
+            </div>
+        </a>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+
+
+
+
+
+    <!-- 第一個 輪播 -->
+    <script>
+
+
+
+
+        var swiper = new Swiper('#swiper_q3 .swiper-container', {
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+
+            },
+            navigation: {
+                nextEl: '#swiper_q3 .swiper-button-next',
+                prevEl: '#swiper_q3 .swiper-button-prev',
+
+            },
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        // navbar scroll滾輪 事 件 
+        $(window).scroll(function () {
+            var TopL = $(window).scrollTop()
+            var NavBar = document.querySelector("#navbar")
+            console.log(TopL);
+
+            if ($(window).scrollTop() > 1000) {
+                NavBar.classList.remove("bg-op")
+                NavBar.classList.add("bg-op-dark")
+            }
+            else {
+                NavBar.classList.add("bg-op")
+                NavBar.classList.remove("bg-op-dark")
+
+            }
+        })
+
+        // lightbox
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+<!-- 頁尾的輪播圖 -->
+<!-- Swiper JS -->
+<script src="../package/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.end.swiper-container', {
+      loop:true,
+      autoplay: {
+    delay: 2000,
+  },
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+  });
+</script>
+
+
+
+
+
+</body>
+
+</html>

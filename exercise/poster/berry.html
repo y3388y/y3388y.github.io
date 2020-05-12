@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        /* img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} */
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        #s1 {
+            background-color: transparent;
+            width: 60%;
+            height: 500px;
+            border: 1px solid rosybrown;
+            perspective: 1000px;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 30%;
+            height: 600px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-box-back {
+            background-color: rgb(107, 66, 5);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        #s2 {
+            background-color: rgb(173, 31, 54);
+            color: white;
+            transform: rotateY(180deg);
+
+        }
+
+        .content {
+            width: 100%;
+            background-color: silver;
+            color: rgb(12, 27, 43);
+            font-size: 20px;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif        }
+        .text{color: blueviolet;
+        font-size: 20px;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4"> -->
+    <div class="box">
+        
+       
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                
+                       
+                <div class="flip-box-front">
+                   
+                    <img src="./img/blueberry.jpg" alt="Paris" style="width:100%;height:600px">
+                </div>
+                <div class="flip-box-back">
+                    <h2>蛋糕海報</h2>
+                    <p>藍莓蛋糕</p>
+                    <img src="./img/10.jpg" alt="Paris" style="width:100%;height:510px">
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- <div class="col-12 col-md-8 "> -->
+        <div id="s1" class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="./img/strawberry.jpg" alt="Paris" style="width:100%;height:500px">
+                </div>
+                <div id=s2 class="flip-box-back">
+                    <h3>蛋糕海報</h3>
+                    <p>草莓蛋糕</p>
+                    <img src="./img/8.jpg" alt="蛋糕"style="width:100%;height:500px">
+                </div>
+               
+            </div>
+            <div class="text">圖片載自網路<br>文字排版 使用 Illustrator <br>製作海報</div>
+        </div>
+    </div>
+   
+    <!-- <h2>反轉你的照片</h2>
+    <p>Move your mouse over the image.<br>
+    將你的滑鼠移到照片上</p>
+    
+    <img src="./berry.html" alt="Paris" width="400" height="300">
+    <img src="./strawberry.html" alt="Paris" width="400" height="300"> -->
+
+
+    <footer>
+
+        <div class="content">
+            這是自己設計的蛋糕店海報 <br>
+            版權所有
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

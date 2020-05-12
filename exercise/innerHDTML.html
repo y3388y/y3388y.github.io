@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            width: 100%;
+            height: 500px;
+            background-color: darkseagreen;
+            display: flex
+        }
+
+        .button {
+            width: 300px;
+            height: 100px;
+            background-color: aquamarine;
+            color: darkslateblue;
+            font-size: 35px;
+            text-align: center;
+         
+        margin-top: 25px;   }
+
+        .box1 {
+            width: 200px;
+            height: 500px;
+            background-color: darksalmon;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all"></div>
+    <div class="button">按我產生資料</div>
+
+    <script>
+        var btn = document.querySelector(".button")
+        var all = document.querySelector(".all")
+        var box = document.querySelector(".box1")
+
+
+        btn.onclick = function () {
+        for (var box = 1; box <4 ; box++) {
+            
+            all.innerHTML += '<div class="box1"></div> '}
+           
+        }
+
+    </script>
+</body>
+
+</html>

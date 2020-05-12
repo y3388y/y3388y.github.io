@@ -1,0 +1,123 @@
+$color_brown:rgb(100, 65, 9);
+$color_yellow:#6e32b3;
+$color_blue:rgba(139, 247, 187, 0.685);
+$color_bluebb:#cbeaf7b6;
+$color_green:green;
+$title:35px;
+$font_size:35px;
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body{margin: 0;}
+a{color: $color_brown;}
+a:hover{color: $color_yellow;}
+
+
+
+
+
+
+
+
+
+
+
+.navbar-nav {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    margin:auto;
+    // transform: translateX(-22.5%);
+
+}
+
+
+.bg-op {
+    background-color: rgba(185, 225, 248, 0.199) !important;
+}
+
+.bg-op-dark {
+    background-color: rgba(202, 140, 82, 0.918) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(7, 109, 150);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(231, 20, 238);
+}
+
+@media(max-width: 960px) {
+    .navbar-nav {
+        margin: 0 auto;
+        transform: unset;
+
+    }
+
+    .bg-op {
+        background-color: rgb(255, 255, 255) !important;
+    }
+
+    .white {
+        color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+
+
+
+}
+
+.box{width: 100%;background-color:$color_blue;
+display: flex;justify-content: center;
+}
+.title{font-size:$title;
+width: 1140px;
+text-align: center;}
+
+.conter_1{display: flex;justify-content:center ;
+         background-color:$color_bluebb;
+       padding: 0;   .text{ color:$color_brown;
+// width: 450px;height: 250px;
+padding:30px 0px;
+
+text-align:center;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+#photo_padding{padding: 0;}
+.photo{background-image: url(./img/3.jpg);
+   width:100%;
+   height: 250px;
+ 
+    background-size:cover;
+
+    }}
+
+
+#cont2{
+    display: flex;justify-content:center;
+}
+.text1{width:100%;padding: 20px;
+    background-color: azure;
+    text-align: center;
+}
+.text{padding: 20px;
+text-align: center;}
+
+//     #img_1{
+//         width:50%;
+//     // height: 300px;
+// background-size: cover;}
+#img_1{
+   width: 100%;
+    height: 300px;
+}
+.last{color: rgb(255, 253, 253);
+    text-align: center;
+    background-color: rgb(67, 90, 112);}
