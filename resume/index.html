@@ -172,10 +172,11 @@
 
     
         <footer>
-<div class="last">
-     個人介紹  若有不詳  請與我聯絡<br>
-     版權所有2020/5/8<br>
-
+<div id="last" class="last">
+    <p> 版權所有 ©2020 Resume  </p>
+<!--     
+    <p> {{company}} 版權所有 {{'©' + new Date().getFullYear()}} 建議瀏覽器 chrome </p> 
+<p>{getFullYear}</p> -->
 </div>
         </footer>
 
@@ -188,6 +189,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script>
+
+;(function(){
+        new Vue({
+            el:'#last',
+            data:{
+            copyright:'版權所有',
+            company:'個人網頁',
+            year: '©' + new Data().getFullYear(),
+            },
+        })
+    })()
+</script> -->
 </body>
 
 </html>
