@@ -4,64 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Document</title>
-<style>
+    <style>
+        .content {
+            margin: auto;
+            /* width: 100%;height: 500px; */
+            background-color: rgb(239, 241, 243);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-.content{
-margin: auto;
-    /* width: 100%;height: 500px; */
-background-color: rgb(239, 241, 243);
-display: flex; flex-wrap: wrap; justify-content: space-around;
-}
 
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: navajowhite;
+            margin-top: 20px;
+        }
 
-.card{width: 200px;height: 300px;background-color: navajowhite;
-margin-top: 20px;}
-.name{width: 300px;height: 250px;background-color: silver;}
-.avatar{width: 100%;height: 200px;text-align: center;}
-.avatar img{width: 100px;height: 150px;}
-.txt{width: 300px;height: 250px;background-color: steelblue;text-align: center;}
-.btn{margin: 0 auto;
+        .name {
+            width: 300px;
+            height: 250px;
+            background-color: silver;
+        }
 
-    text-align: center;
-    font-size: 35px;
-border-radius: 10px;
-background-color: mediumpurple;
-color: rgb(11, 70, 70);
+        .avatar {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+        }
 
-z-index: 999;
-position: fixed;
-top: 20px;
+        .avatar img {
+            width: 100px;
+            height: 150px;
+        }
 
-}
-.box{height: 100px;}
-</style>
+        .txt {
+            width: 300px;
+            height: 250px;
+            background-color: steelblue;
+            text-align: center;
+        }
+
+        .btn {
+            margin: 0 auto;
+
+            text-align: center;
+            font-size: 35px;
+            border-radius: 10px;
+            background-color: mediumpurple;
+            color: rgb(11, 70, 70);
+
+            z-index: 999;
+            position: fixed;
+            top: 20px;
+
+        }
+
+        .box {
+            height: 100px;
+        }
+    </style>
 
 </head>
-    
-
-<body><div class="container">
-    <div class="box">
-    <div class="btn">產生資料</div></div>
-    <div class="content"></div>
-
-    <div class="row">
-        <div class="col ">
-      
 
 
-      
-</div>
-</div>
-</div>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="btn">產生資料</div>
+        </div>
+        <div class="content"></div>
+
+        <div class="row">
+            <div class="col ">
+
+
+
+
+            </div>
+        </div>
+    </div>
     <script>
-var btn=document.querySelector(".btn")
-var cont=document.querySelector(".content")
-var color2='style="color:purple"'
-var color=' style="color:blue"'
-var color1='style="color:tomato"'
-        var Class=[
+        var btn = document.querySelector(".btn")
+        var cont = document.querySelector(".content")
+        var cLick = 0
+        var color2 = 'style="color:purple"'
+        var color = ' style="color:blue"'
+        var color1 = 'style="color:tomato"'
+        var Class = [
             {
                 name: "coco",
                 age: 18,
@@ -73,14 +107,14 @@ var color1='style="color:tomato"'
             {
                 name: "alxe",
                 age: 14,
-                food:" ice",
+                food: " ice",
                 avatar: 'https://lh3.googleusercontent.com/proxy/qj4KmvUkM_mV9cDoDDNuWHd1MFYWc_3xcvvOCYRhfR9DF6nS-JPgriwdeOrDPqlm7OYdIjabvFGEqKTTKZVeQ5APkqIqtXKD1INVGv1QR3ks9fwLO54PdzmtaEOPAbEf519CYkDQFccT0fAStjGeUTxOPfg'
 
             },
             {
                 name: "ball",
                 age: 18,
-                food:"chocole",
+                food: "chocole",
                 avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoyk7a0sbuqwx5KLUV_sahIauYryKFqtz8mPL2FOABgNAd1H8_&usqp=CAU'
 
             },
@@ -94,22 +128,24 @@ var color1='style="color:tomato"'
             {
                 name: "sam",
                 age: 16,
-                food:" apple",
+                food: " apple",
                 avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXyR-pWZ0vk4VrkSKwuMLUPWFGdJ_-eFGWIo86rAoUStUYScrA&usqp=CAU'
 
             }
-,
-{
-    name :"joy",
-      age: 13,
-food:"candy",
-avatar:'https://png.pngtree.com/png-clipart/20190618/original/pngtree-teenage-girl-lovely-cartoon-avatar-png-image_3945344.jpg'       }       ]
+            ,
+            {
+                name: "joy",
+                age: 13,
+                food: "candy",
+                avatar: 'https://png.pngtree.com/png-clipart/20190618/original/pngtree-teenage-girl-lovely-cartoon-avatar-png-image_3945344.jpg'
+            }]
 
 
-btn.onclick=function(){
-    for (var index = 0; index <Class.length; index++) {
-        const element = Class[index];
-        cont.innerHTML+= `
+        btn.onclick = function () {
+            if (cLick < 1) {
+                for (var index = 0; index < Class.length; index++) {
+                    const element = Class[index];
+                    cont.innerHTML += `
         <div class="card">
             <div class="avatar">
                 <img src="${element.avatar}"alt="">
@@ -120,14 +156,24 @@ btn.onclick=function(){
                 <p>喜歡的食物:<span ${color1}>${element.food}</span></p>
         </div>
         </div>`
-    }
+                }
+                cLick +=1
+            } else {
+                cLick +=0
+            }
 
-}
+        }
     </script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
