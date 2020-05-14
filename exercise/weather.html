@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Document</title>
+
     <style>
         * {
             box-sizing: border-box;
         }
 
-        .body {color: pink;
+        .body {
+            color: pink;
             margin: 0;
         }
 
@@ -22,96 +25,116 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+
         }
-   
-  .card {
+
+        .card {
             width: 300px;
             height: 450px;
             background-color: rgb(75, 90, 139);
             text-align: center;
             margin-top: 10px;
-color: cornsilk;
+            color: cornsilk;
+
         }
 
-        .card img{
+        .card img {
             width: 80%;
             height: 200px;
-          
+
             margin: 10px auto;
         }
+    </style>
+</head>
 
-</style>
-        </head>
+<body>
 
-        <body>
-            
-                   
-        <div class="content">
 
-</div>
-        <script>
-        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D') .then(function (response) {
-                return response.json();
-            })
-             .then(function (weatherData) {
-                var locations=weatherData.records.location 
-                var cont=document.querySelector('.content') 
-                for (let index=0; index < locations.length; index++) {
-                    const element=locations[index];
-                    var name=element.locationName 
-                    var wx=element.weatherElement[0].time[0].parameter.parameterName 
-                    var pop=element.weatherElement[1].time[0].parameter.parameterName 
-                    var maxT=element.weatherElement[4].time[0].parameter.parameterName 
-                    var minT=element.weatherElement[2].time[0].parameter.parameterName 
-                    var CI=element.weatherElement[3].time[0].parameter.parameterName 
+    <div class="content">
+    </div>
+
+
+    <script>
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D').then(function (response) {
+            return response.json();
+        })
+            .then(function (weatherData) {
+                var locations = weatherData.records.location
+                var cont = document.querySelector('.content')
+                for (let index = 0; index < locations.length; index++) {
+                    const element = locations[index];
+                    var name = element.locationName
+                    var wx = element.weatherElement[0].time[0].parameter.parameterName
+                    var pop = element.weatherElement[1].time[0].parameter.parameterName
+                    var maxT = element.weatherElement[4].time[0].parameter.parameterName
+                    var minT = element.weatherElement[2].time[0].parameter.parameterName
+                    var CI = element.weatherElement[3].time[0].parameter.parameterName
                     console.log(element);
-var color1='style="color: palegreen"'
-var color2='style="color: red"'
-                    var img_src 
-                    if (pop==0) {
-                        img_src="./img/sun.png"
-                        suggest="適合出遊"
-                        color='style="color:blue"'
-                        
+                    var color1 = 'style="color: palegreen"'
+                    var color2 = 'style="color: red"'
+                    var img_src
+                    if (pop == 0) {
+                        img_src = "./img/sun.png"
+                        suggest = "適合出遊"
+                        color = 'style="color:blue"'
+
                     }
 
-                    else if (pop<=30) {
-                        img_src="./img/cloudy_day.png"
-                        suggest="要注意天氣變化"
-                        color='style="color:yellow"'
+                    else if (pop <= 30) {
+                        img_src = "./img/cloudy_day.png"
+                        suggest = "要注意天氣變化"
+                        color = 'style="color:yellow"'
                     }
 
-                    else if (pop>30) {
-                        img_src="./img/rain.jpg"
-                        suggest="出門攜帶雨具"
-                        color='style="color:hotpink"'
+                    else if (pop > 30) {
+                        img_src = "./img/rain.jpg"
+                        suggest = "出門攜帶雨具"
+                        color = 'style="color:hotpink"'
                     }
-
-                    cont.innerHTML += `
+           
+                
+               cont.innerHTML += `
                    
+               <div class="container">
+        <div class="row">
+            <div id="card1" class="col-12 col-md-5 col-xl-3" >
+
 
                     <div class="card"> 
                        
                     <img src="${img_src}"alt=""> 
                     <h3>${name}</h3> 
-                    <p><span ${color1}>${ minT}</span>度~<span ${color1}>${maxT}</span>度</p>
+                    <p><span ${color1}>${minT}</span>度~<span ${color1}>${maxT}</span>度</p>
                     <p>${CI}</p> 
                     <p>降雨機率:<span ${color2}>${pop}</span>%</p> 
                    <p>建議: <span ${color}>${suggest}</span></p>
-                    </div>    ` 
-                    
-    
-                   
-                }
+             
+            </div>
+    </div>
+</div>
+                    </div>    `
 
 
 
-             }
+}
+               
 
-        );
+
+
+            }
+
+            );
     </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-     
-        </body></html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
