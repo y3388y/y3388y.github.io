@@ -31,7 +31,7 @@ display: none;
 color: magenta;
 /* margin-right: 200px; */
 display:block;
-display: flex;direction: row;
+display: flex;direction:10px;
 }
 
 .txt1 {
