@@ -41,7 +41,6 @@
         .card img {
             width: 80%;
             height: 200px;
-
             margin: 10px auto;
         }
     </style>
@@ -91,33 +90,25 @@
                         suggest = "出門攜帶雨具"
                         color = 'style="color:hotpink"'
                     }
-           
-                
-               cont.innerHTML += `
-                   
-               <div class="container">
-        <div class="row">
-            <div id="card1" class="col-12 col-md-5 col-xl-3" >
 
 
+                    cont.innerHTML += `
                     <div class="card"> 
-                       
                     <img src="${img_src}"alt=""> 
                     <h3>${name}</h3> 
                     <p><span ${color1}>${minT}</span>度~<span ${color1}>${maxT}</span>度</p>
                     <p>${CI}</p> 
                     <p>降雨機率:<span ${color2}>${pop}</span>%</p> 
-                   <p>建議: <span ${color}>${suggest}</span></p>
-             
-            </div>
-    </div>
-</div>
-                    </div>    `
+                    <p>建議: <span ${color}>${suggest}</span></p>       
+                    </div> `
+                       
+                
+                       
 
 
 
-}
-               
+                }
+
 
 
 
