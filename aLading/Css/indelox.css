@@ -79,7 +79,7 @@ display: flex;direction:rtl;
 }
 
 
-
+#move{display: flex;justify-content: center;}
 
 .ban {
     width: 100%;
@@ -289,8 +289,8 @@ height: unset;}
 
 
 
-/* #move{
-    display:flex;flex-direction: column;} */
+#move{
+    display:flex;flex-direction: column;}
 #move1{width: 100%;}
 #move2{width: 100%;}
 
