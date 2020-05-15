@@ -140,7 +140,10 @@ img {
     
 }
 
-
+ .container3 :hover( position: absolute; 
+     top: 100; 
+     left: -300px; 
+     transition: .3s;
 
 .parallax-decoration-block {
     width: 100%;
