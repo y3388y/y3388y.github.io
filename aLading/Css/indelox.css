@@ -123,6 +123,7 @@ img {
     color: rgba(9, 4, 27,0.65);
 }
 
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -130,20 +131,22 @@ img {
 }
 
 .margin{margin: 10px 10px;}
-
+.photoHover{display: flex;justify-content: center;}
 
 .container3 {
-    width: 100%;
-    height: 100vh;
+    width:570px;
+    height: 400px;
     background-image: url(https://www.voguehk.com/media/2019/05/60175324_869093286804551_6344470220848531426_n.jpg);
     background-size: cover;
-    
+ 
 }
 
- .container3 :hover( position: absolute; 
+ .container3:hover{ position: absolute; 
      top: 100; 
-     left: -300px; 
+     left: 330px; 
      transition: .3s;
+
+    }
 
 .parallax-decoration-block {
     width: 100%;
@@ -159,14 +162,21 @@ img {
 }
 
 .staff-introduction {
+
     width: 100%;
+   
 }
 
 .staff {
-    width: 100%;
-    height: 300px;
+    width: 70%;
+    /* height: 300px; */
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    left: 300px;
     display: flex;
+/* margin: auto; */
     
 }
 
@@ -177,7 +187,7 @@ img {
 }
 
 .w-100 {
-    width: 100%;
+    width:100%;
 }
 
 .h-100 {
@@ -186,11 +196,11 @@ img {
 
 .text-introduction {
     width: 70%;
-    height: 100%;
+    /* height: 100%; */
     padding: 20px 50px;
     background-color: rgb(98, 141, 161);
 }
-
+.text-introduction:hover{background-color: rgb(130, 207, 238);}
 .w-33{width: 350px;
 height: 500px;
 }
@@ -221,7 +231,7 @@ text-align: center;
 font-family: 'Times New Roman', Times, serif;
 margin: auto;
 font-size: 50px;
-padding-top: 100px;}
+padding-top: 250px;}
 
 
 

@@ -39,6 +39,45 @@ a:hover {
   color: #e714ee;
 }
 
+
+
+
+
+.typing{
+  font-size: 1rem;
+  padding-top: 6%;
+  margin-bottom: 5%;
+  font-weight: normal;
+  letter-spacing: .5rem;
+  -webkit-animation: type 2s steps(50, end) forwards;
+  animation: type 2s steps(50, end) forwards;
+  }
+  .typing-item{
+  text-align: center;
+  color: rgb(78, 70, 24);
+  font-size: 20px;
+  width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+ 
+  }
+  @-webkit-keyframes type{
+  from { width: 0;}
+  }
+  @keyframes type{
+  from { width: 0;}
+  }
+
+
+
+  
+
+
+
+
+
+
+
 @media (max-width: 960px) {
   .navbar-nav {
     margin: 0 auto;
