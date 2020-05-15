@@ -15,7 +15,8 @@ font-family: 標楷體;
 position: absolute;
 left:10px;
 }
-
+.ldld:hover{margin-top: 10px;
+margin-left: 20px;}
 .togg{width: 100px;
 height: 100px;
 background-image:url(./hamburger.png);
@@ -33,7 +34,8 @@ color: magenta;
 display:block;
 display: flex;direction:rtl;
 }
-
+.box:hover{margin-top: 20px;
+margin-left: 20px;}
 .txt1 {
     width: 70px;
     /* height: 50px; */
@@ -82,13 +84,14 @@ display: flex;direction:rtl;
 #move{display: flex;justify-content: center;}
 
 .ban {
-    width: 100%;
+   width: 100%;
     height: calc(100vh - 48px);
     background-image: url(https://images8.alphacoders.com/100/1004780.jpg);
     background-size: cover;
 
 }
-
+.ban:hover{ width:1140px;
+margin: auto;}
 
 .content {
     width: 100%;
@@ -233,8 +236,13 @@ margin: auto;
 font-size: 50px;
 padding-top: 250px;}
 
+.tit{color: rgb(202, 243, 229);
+font-size: 25px;
+padding: 13px;
 
-
+}
+.tit:hover{background-color: rgb(95, 87, 209);
+color: rgb(195, 238, 121);}
 a:hover{background-color: rgb(130, 207, 238);}
 
 @media (max-width:576px){
