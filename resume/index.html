@@ -20,6 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-op ">
         <h1 style="display: none;">頁首按鈕</h1>
         <a class="navbar-brand" href="#" style="color:rgb(39, 104, 26)">Amber</a>
+        <div id="tim">{{text}}{{time}}</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +71,7 @@
                     <div class="row">
                         <div class="col-12 col-md-6 col-xl-6">
                             <div class="text">
-                                <h1 class="typing typing-item">
+                                <!-- <h1 class="typing typing-item"> -->
                                     <span>
                                         我是快樂又上進的人,<br>
                                         也喜歡寫程式,<br>
@@ -97,7 +98,7 @@
         <div class="container ">
 
             <div class="text1">
-                <h1 class="typing typing-item">
+                <!-- <h1 class="typing typing-item"> -->
                     跨平台網站製作-介面規劃與RWD前端程式開發班<br>
                     總訓練時數420小時<br>
                     109/2/3~109/5/4<br></h1>
@@ -186,15 +187,24 @@
      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   
     <script>
-        new Vue({
+ new Vue({
             el: '#last',
             data: {
                 copyright: '版權所有~翻版必究',
                 year: '©' + new Date().getFullYear(),
                 company: '個人網頁',
-              
+            //   text:'今天時間',
+            //   time:new Date(),
             }
         })
+new Vue({
+            el:'#tim',
+            data:{
+                text:'今天時間',
+              time:new Date(),
+             
+            }
+        });
     </script>
 </body>
 
