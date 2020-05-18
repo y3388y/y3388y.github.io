@@ -9,6 +9,15 @@
     <style>
         .boday{margin: 0;}
         *{box-sizing: border-box;}
+        .tit{margin-left: 120px;
+            color: rgb(8, 124, 14);
+            font-size: 25px;
+        }
+        .tit:hover{color: darkgoldenrod;
+      
+font-size: 30px;
+
+        }
         .swiper-container {
             width: 950px;
             /* height: 100vh; */
@@ -31,16 +40,20 @@
             background-color: cadetblue;
             font-size: 20px;
         }
+        .text:hover{background-color: rgb(124, 94, 19);}
     </style>
 
 
 </head>
 
 <body>
+    <div class="nav"><h1 style="display: none;">森林照片</h1>
+        <a href="/resume/index.html" style="text-decoration:none">
+            <div class="tit">返回Resume</div>    </a>
+    </div>
+    <section>
     <div class="container">
-
-
-        <div class="box">
+    <div class="box">
 
             <div class="text"><h3>森林照片輪播</h3>
             <spap>近年來，城市立體綠化儼然成形，以”綠建築的好夥伴”自居的樹花園，針對綠建築九大指標之「生物多樣性」、「綠化量」、「基地保水」提供解決方案。
@@ -49,6 +62,7 @@
             <br>在農村荒地量多，如果是有心的農民完全可以承包大量的荒地，然後種植桉樹。桉樹的木質非常優秀，是製作許多木質家具的上好材料，同時桉樹的葉子還可以煉油、作為藥材。桉樹的畝收益價值在2000元左右，這個收益是純收益，雖然不高但在農村土地資源非常多，如果量大一樣可以致富
 
        </spap></div>
+       
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -82,7 +96,7 @@
             </div>
 
         </div></div></div>
-    
+    </section>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {

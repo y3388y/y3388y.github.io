@@ -8,7 +8,7 @@
     <style>
        body{margin: 0;
        }
-        .pic {position: top 50px;
+        .pic {position: top 100px;
    
             width: 500px;
             height: 500px;
@@ -16,13 +16,24 @@
         }
         .text{
         position: fixed;
-        top: 20px;
+        top: 70px;
     }
     .box{width:100%;height: 100vh;
     background-color:bisque;
     display: flex;justify-content: center;
 
     }
+    .tit{color: deeppink;
+   
+        background-color:bisque;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        }
+        .tit:hover{color: rgb(123, 197, 219);
+ 
+           
+        }
 /* 打字機特效 */
     .typing{
   font-size: 1rem;
@@ -53,14 +64,19 @@
 </head>
 
 <body ><h1 style="display: none;">四張兔子照片轉換</h1>
+    <div class="nav">
+        <a href="/resume/index.html" style="text-decoration:none">
+            <div class="tit">返回Resume</div>    </a>
+    </div>
     
 <div class="box">
+    
     <img class="pic typing typing-item"
         src="data:image/jpeg;base64,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"
         alt="">
-        <!-- <div class="text">  <h1 class="typing typing-item"> 我 是 小 白 兔</h1></div> -->
+       
     <div class="text">我 是 小 白 兔</div>
-
+   
 
 </div>
     <script>
