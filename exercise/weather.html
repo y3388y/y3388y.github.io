@@ -17,23 +17,36 @@
             color: pink;
             margin: 0;
         }
-.nav{width: 100%;
-height: 50px;
-background-color: rgb(102, 189, 192);
-padding: 13px;
-margin: 0 auto;
-display: flex;justify-content: center;
-}
-.tit{width: 150px;
-    color: rgb(31, 29, 1);
-    background-color: rgb(185, 215, 240);
-margin: auto;text-align: center;
-}
-.tit:hover{width: 200px;
-height: 30px;
-background-color: rgb(240, 192, 224);
-font-size: 20px;
-}
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(102, 189, 192);
+            padding: 13px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tit {width: 100px;
+            width: 150px;
+            color: rgb(31, 29, 1);
+            background-color: rgb(240, 232, 185);
+        margin: auto;
+        text-align: center;
+         
+            position: fixed;
+            z-index: 999;
+
+        }
+
+        .tit:hover {
+            width: 200px;
+            height: 30px;
+            background-color: rgb(240, 192, 224);
+            font-size: 20px;
+        }
+
         .content {
             margin: 0 auto;
             width: 70%;
@@ -54,27 +67,33 @@ font-size: 20px;
 
         }
 
-.card:hover{left: 10px;
-bottom: 10px;
-background-color: rgb(57, 77, 57);}
+        .card:hover {
+            left: 10px;
+            bottom: 10px;
+            background-color: rgb(57, 77, 57);
+        }
 
         .card img {
             width: 80%;
             height: 200px;
             margin: 10px auto;
         }
-.card img:hover{width: 90%;
-height: 220px;
 
-}
+        .card img:hover {
+            width: 90%;
+            height: 220px;
+
+        }
     </style>
 </head>
 
 <body>
-<div class="nav"><h1 style="display:none">天氣API</h1>
-    <a href="/resume/index.html" style="text-decoration:none">
-        <div class="tit">返回Resume</div></a>
-</div>
+    <div class="nav">
+        <h1 style="display:none">天氣API</h1>
+        <a href="/resume/index.html" style="text-decoration:none">
+            <div class="tit">返回Resume</div>
+        </a>
+    </div>
 
     <div class="content">
     </div>
@@ -128,9 +147,9 @@ height: 220px;
                     <p>降雨機率:<span ${color2}>${pop}</span>%</p> 
                     <p>建議: <span ${color}>${suggest}</span></p>       
                     </div> `
-                       
-                
-                       
+
+
+
 
 
 
