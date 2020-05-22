@@ -25,6 +25,14 @@ background-size: cover;
 display: none;
 
 }
+
+@media(max-width:576px){
+    .ldld{display: none;
+
+    }
+  
+}
+
 .menu{
     
     /* width: 100px; */
@@ -241,9 +249,10 @@ font-size: 25px;
 padding: 13px;
 
 }
-.tit:hover{background-color: rgb(95, 87, 209);
+.tit:hover{background-color: rgba(95, 87, 209,0.35);
 color: rgb(195, 238, 121);}
-a:hover{background-color: rgb(130, 207, 238);}
+a:hover{background-color: rgba(130, 207, 238,0.2);
+height:50px;}
 
 @media (max-width:576px){
 
@@ -252,7 +261,7 @@ a:hover{background-color: rgb(130, 207, 238);}
         background-color: wheat;
     }
 
-  
+
 .box-all{
     display: unset; 
 }
@@ -327,7 +336,7 @@ height: unset;}
 .menu:hover{display: block;}
 .menu:hover{display:unset;}
 .togg:hover~.menu{display: block;
-position: absolute;right: 10px;
+position: absolute;right:10px;
 transition: 3s;
 }
 
