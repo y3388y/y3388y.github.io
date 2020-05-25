@@ -9,16 +9,20 @@
     <title>Document</title>
 
     <style>
-.nav:hover{color: chartreuse;
+        .nav:hover {
+            color: chartreuse;
 
-}
-        .nav{color: rgb(243, 242, 237);
-        background-color: rgb(172, 148, 16);
-padding-left: 200px;
-
-        font-size: 30px;
-        margin-bottom: 10px;
         }
+
+        .nav {
+            color: rgb(243, 242, 237);
+            background-color: rgb(172, 148, 16);
+            padding-left: 200px;
+
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
         .body {
             display: flex;
         }
@@ -30,65 +34,91 @@ padding-left: 200px;
 
         }
 
-        .pic img{width: 370px; height: 550px; background-size: cover;}
-        .pic{width:350px; height:600px; overflow:hidden;}
-.pic img{transform:scale(1,1);transition: all 1s ease-out;}
-.pic img:hover{transform:scale(1.2,1.2);}
+        .pic img {
+            width: 370px;
+            height: 550px;
+            background-size: cover;
+        }
 
-.footer{background-color: rgb(172, 148, 16);
-color: rgb(65, 56, 20);font-size: 30px;
-text-align: center;
-}
-.footer:hover{background-color: orange;
-color: rgb(165, 8, 60);
-}
+        .pic {
+            width: 350px;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .pic img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        .pic img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        .footer {
+            background-color: rgb(172, 148, 16);
+            color: rgb(65, 56, 20);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .footer:hover {
+            background-color: orange;
+            color: rgb(165, 8, 60);
+        }
+        .tit{position: fixed;z-index: 999;}
     </style>
 </head>
 
-<body > <h1 style="display: none;"> AI 設計稿</h1>
-    <nav>    <h1 style="display: none;"> 設計稿 標題</h1>
+<body>
+    <h1 style="display: none;"> AI 設計稿</h1>
+    <nav>
+        <h1 style="display: none;"> 設計稿 標題</h1>
 
-    <div class="container-fuil">
-    <div class="nav"><P style="margin-right: 20px;">網頁設計 </P>
-        <a href="/resume/index.html" style="text-decoration:none">
-            <div class="tit">返回Resume</div></a>
-    </div>
-        
-      
-    </div>
+        <div class="container-fuil">
+            <div class="nav">
+                <P style="margin-right: 20px;">網頁設計 </P>
+                <a href="/resume/index.html" style="text-decoration:none">
+                    <div class="tit">返回Resume</div>
+                </a>
+            </div>
 
-</nav>
-<section >
-    <h1 style="display: none;"> 設計稿 內容</h1>
 
-    <div class="container">
-        <div class="content">
-            <div class="row">
+        </div>
 
-                <div class="col-12 col-md-5 col-xl-4"> 
-                    <div class="pic"><img src="./img/wireframe.jpg" /></div>
-                 </div>
+    </nav>
+    <section>
+        <h1 style="display: none;"> 設計稿 內容</h1>
 
-                <div class="col-12 col-md-5 col-xl-4">
-                    <div class="pic"><img src="./img/layout.jpg" /></div>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+
+                    <div class="col-12 col-md-5 col-xl-4">
+                        <div class="pic"><img src="./img/wireframe.jpg" /></div>
+                    </div>
+
+                    <div class="col-12 col-md-5 col-xl-4">
+                        <div class="pic"><img src="./img/layout.jpg" /></div>
+                    </div>
+
+                    <div class="col-12 col-md-5 col-xl-4">
+                        <div class="pic"><img src="./img/layout1.jpg" /></div>
+                    </div>
+
                 </div>
-
-                <div class="col-12 col-md-5 col-xl-4">
-                    <div class="pic"><img src="./img/layout1.jpg" /></div>
-                </div>
-
             </div>
         </div>
-    </div>
-    </div>
-</section>
+        </div>
+    </section>
 
-<section>
-    
-    <h1 style="display: none;"> 設計稿 頁尾</h1>
-<div class="footer">
-    hover效果
-</div></section>
+    <section>
+
+        <h1 style="display: none;"> 設計稿 頁尾</h1>
+        <div class="footer">
+            hover效果
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

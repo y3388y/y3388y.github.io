@@ -28,28 +28,31 @@
             justify-content: center;
         }
 
-        .tit {width: 100px;
-            width: 150px;
+        .tit {
+            width: 100px;
+            height: 30px;
             color: rgb(31, 29, 1);
-            background-color: rgb(240, 232, 185);
-        margin: auto;
-        text-align: center;
-         
+            background-color: rgba(240, 232, 185,0.8);
+            border-radius: 10px;
+            margin: auto;
+            left: 65px;
+            color: blueviolet;
             position: fixed;
             z-index: 999;
-
+text-align: center;
         }
 
         .tit:hover {
-            width: 200px;
+            width: 120px;
             height: 30px;
             background-color: rgb(240, 192, 224);
             font-size: 20px;
+            color: rgb(9, 83, 88);
         }
 
-        .content {
+        .container {
             margin: 0 auto;
-            width: 70%;
+            width: 100%;
             background-color: rgb(196, 233, 250);
             display: flex;
             flex-wrap: wrap;
@@ -66,7 +69,7 @@
             color: cornsilk;
 
 
-    
+
 
         }
 
@@ -98,7 +101,7 @@
         </a>
     </div>
 
-    <div class="content">
+    <div class="container">
     </div>
 
 
@@ -108,7 +111,7 @@
         })
             .then(function (weatherData) {
                 var locations = weatherData.records.location
-                var cont = document.querySelector('.content')
+                var cont = document.querySelector('.container')
                 for (let index = 0; index < locations.length; index++) {
                     const element = locations[index];
                     var name = element.locationName

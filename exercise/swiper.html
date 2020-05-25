@@ -12,6 +12,9 @@
         .tit{margin-left: 120px;
             color: rgb(8, 124, 14);
             font-size: 25px;
+            position: fixed;
+            z-index: 999;
+            
         }
         .tit:hover{color: darkgoldenrod;
       
@@ -30,7 +33,7 @@ font-size: 30px;
 
         .box {
             display: flex;
-            justify-content: center;
+       justify-content: space-between;
             width: 1140px;
             margin: auto;
         }
@@ -41,6 +44,12 @@ font-size: 30px;
             font-size: 20px;
         }
         .text:hover{background-color: rgb(124, 94, 19);}
+
+        @media(max-width: 576px){.text{width:500px;}}
+    @media(max-width:576px){.box{width: 500px;height: 500px; margin: 0;display: flex;flex-wrap: wrap;} }
+        
+        @media(max-width: 576px){.swiper-container{width: 500px;height: 100vh;}}
+        @media(max-width: 576px){.swiper-container img {width: 500px;height:100vh}}
     </style>
 
 
@@ -53,16 +62,16 @@ font-size: 30px;
     </div>
     <section>
     <div class="container">
-    <div class="box">
-
+    <div class="box">         
             <div class="text"><h3>森林照片輪播</h3>
             <spap>近年來，城市立體綠化儼然成形，以”綠建築的好夥伴”自居的樹花園，針對綠建築九大指標之「生物多樣性」、「綠化量」、「基地保水」提供解決方案。
 
                 為求樹木植栽在城市之中，能維持健康的成長，樹花園股份有限公司針對植栽種植及相關資材，進行改良、推廣，以及新技術的引進。
             <br>在農村荒地量多，如果是有心的農民完全可以承包大量的荒地，然後種植桉樹。桉樹的木質非常優秀，是製作許多木質家具的上好材料，同時桉樹的葉子還可以煉油、作為藥材。桉樹的畝收益價值在2000元左右，這個收益是純收益，雖然不高但在農村土地資源非常多，如果量大一樣可以致富
 
-       </spap></div>
-       
+       </spap></div> 
+
+    
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -95,7 +104,8 @@ font-size: 30px;
                 <div class="swiper-button-prev"></div>
             </div>
 
-        </div></div></div>
+        </div></div></div> 
+
     </section>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script>
