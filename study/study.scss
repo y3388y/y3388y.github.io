@@ -37,7 +37,7 @@ a:hover{color: $color_yellow;}
 
 font-size: 20px;
 margin-right: 10px;}
-
+.tet:hover{padding: 10px;}
 .btn1{height: 50px;
 font-size: 20px;
 color: $color_green;}
@@ -73,20 +73,24 @@ font-family: 'Times New Roman', Times, serif;
     background-size:cover;
 
     }}
-
+.photo:hover{background-image:url(./img/2.jpg)}
 
 #cont2{
     display: flex;justify-content:center;
 }
 .text1{width:100%;padding: 20px;
     background-color: azure;
-    text-align: center;
+    text-align: center;}
+.text1:hover{background-color: rgb(226, 242, 245);
+color: coral;
+padding: 10px;}
 
-}
 .text{padding: 20px;
 text-align: center;
 }
-
+.text:hover{padding: 10px;
+    color: rgb(58, 7, 51);
+    background-color: rgb(187, 219, 238);}
 
 #img_1{
    width: 100%;

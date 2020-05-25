@@ -34,6 +34,10 @@ a:hover {
   margin-right: 10px;
 }
 
+.tet:hover {
+  padding: 10px;
+}
+
 .btn1 {
   height: 50px;
   font-size: 20px;
@@ -91,6 +95,10 @@ a:hover {
   background-size: cover;
 }
 
+.photo:hover {
+  background-image: url(./img/2.jpg);
+}
+
 #cont2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,9 +115,21 @@ a:hover {
   text-align: center;
 }
 
+.text1:hover {
+  background-color: #e2f2f5;
+  color: coral;
+  padding: 10px;
+}
+
 .text {
   padding: 20px;
   text-align: center;
+}
+
+.text:hover {
+  padding: 10px;
+  color: #3a0733;
+  background-color: #bbdbee;
 }
 
 #img_1 {
