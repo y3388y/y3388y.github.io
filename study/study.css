@@ -142,4 +142,8 @@ a:hover {
   text-align: center;
   background-color: #435a70;
 }
+
+#img_1:hover {
+  padding: 10px;
+}
 /*# sourceMappingURL=study.css.map */
