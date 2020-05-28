@@ -113,6 +113,11 @@ a:hover {
   font-size: 30px;
 }
 
+.name:hover {
+  color: royalblue;
+  font-size: 100px;
+}
+
 .opening {
   width: 100%;
   height: 100vh;
@@ -221,6 +226,10 @@ a:hover {
   height: calc(100vh - 100px);
 }
 
+.b {
+  display: none;
+}
+
 .bbb {
   color: 0;
   text-align: center;
@@ -293,6 +302,94 @@ a:hover {
   100% {
     -webkit-transform: translate(0, 0) rotate(720deg);
             transform: translate(0, 0) rotate(720deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .bbb {
+    width: 300px;
+    height: 500px;
+  }
+  @-webkit-keyframes move {
+    0% {
+      -webkit-transform: translate(0px, 50px) rotate(10deg);
+              transform: translate(0px, 50px) rotate(10deg);
+    }
+    25% {
+      -webkit-transform: translate(0px, 50px);
+              transform: translate(0px, 50px);
+    }
+    50% {
+      -webkit-transform: translate(0px, 50px) scale(0.5);
+              transform: translate(0px, 50px) scale(0.5);
+    }
+    75% {
+      -webkit-transform: translate(0px, 50px);
+              transform: translate(0px, 50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0) rotate(720deg);
+              transform: translate(0, 0) rotate(720deg);
+    }
+  }
+  @keyframes move {
+    0% {
+      -webkit-transform: translate(0px, 50px) rotate(10deg);
+              transform: translate(0px, 50px) rotate(10deg);
+    }
+    25% {
+      -webkit-transform: translate(0px, 50px);
+              transform: translate(0px, 50px);
+    }
+    50% {
+      -webkit-transform: translate(0px, 50px) scale(0.5);
+              transform: translate(0px, 50px) scale(0.5);
+    }
+    75% {
+      -webkit-transform: translate(0px, 50px);
+              transform: translate(0px, 50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0) rotate(720deg);
+              transform: translate(0, 0) rotate(720deg);
+    }
+  }
+  .trapezoid {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: calc(100vh - 100px);
+    background-color: lightgreen;
+  }
+  .name {
+    position: fixed;
+    z-index: 999;
+    margin-left: 20px;
+    margin-top: 300px;
+  }
+  .name:hover {
+    font-size: 33px;
+    color: crimson;
+  }
+  .aaa {
+    background-color: #c1eafa;
+  }
+  .b {
+    color: #f3f7f2;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .box {
+    background-color: #1eb8b0;
+  }
+  .bbb {
+    background-color: #6baeb3;
+  }
+  .opening {
+    background-color: #d17493;
   }
 }
 /*# sourceMappingURL=resume.css.map */

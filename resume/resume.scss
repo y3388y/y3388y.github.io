@@ -99,7 +99,8 @@ color: $color_yellow;
 font-size: 30px;
 }
 
-
+.name:hover{color: royalblue;
+font-size: 100px;}
 
     .opening {
         width: 100%;
@@ -169,6 +170,7 @@ font-size: 30px;
 height: calc(100vh - 100px);
 
 }
+.b{display: none;}
     .bbb{color: green($color: #000000);
         text-align: center;
     
@@ -225,3 +227,50 @@ height: calc(100vh - 100px);
             transform: translate(0,0) rotate(720deg);
         }
     }
+ 
+@media(max-width:576px){
+    
+    .bbb{width: 300px;height:500px;
+    
+    
+        @keyframes move{
+      
+
+            0%{
+                transform: translate(0px,50px) rotate(10deg);
+            }
+    
+            25%{
+                transform: translate(0px,50px);
+            }
+    
+            50%{
+                transform: translate(0px,50px) scale(0.5);
+            }
+    
+            75%{
+                transform: translate(0px,50px);
+            }
+    
+            100%{
+                transform: translate(0,0) rotate(720deg);
+            }
+        }
+     
+    }
+.trapezoid{background-color: cornflowerblue;
+    width: 300px;height:calc(100vh - 100px);background-color: lightgreen;}
+.name{position: fixed;z-index: 999;
+margin-left: 20px;
+margin-top: 300px;
+}
+.name:hover{font-size: 33px;
+color: crimson;
+}
+.aaa{background-color: rgb(193, 234, 250);}
+.b{color: rgb(243, 247, 242);display: block;
+display: flex;justify-content: space-around;}
+.box{background-color:rgb(30, 184, 176);}
+.bbb{background-color: rgb(107, 174, 179);}
+.opening{background-color: rgb(209, 116, 147);}
+}
