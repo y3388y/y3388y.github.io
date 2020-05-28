@@ -27,7 +27,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="../study/study.html">個人學習<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="../study/study.html">個人學習<span
+                        class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="../ps/businessCard.html" target="_blank">photoshop</a>
                 <a class="nav-item nav-link" href="../exercise/poster/berry.html" target="_blank">illustrator</a>
                 <div class="dropdown">
@@ -52,19 +53,32 @@
         </div>
     </nav>
 
-<section>
 
-    <div class="pho">
-        <div class="tx">作品集</div></div>
-    </div>
-</section>
+    <section>
 
+        <div class="aaa">
+            <div class="trapezoid">
+               <a href="../exercise/weather.html"> <div class="name">resume</div></a>
+                <div class="opening">
+                    <div class="box boxL"></div>
+                    <div class="box boxR"></div>
+                    <div class="box boxL"></div>
+                    <div class="box boxR"></div>
+                    <div class="box boxL"></div>
+                    <div class="box boxR"></div>
+                    <div class="box boxL"></div>
+                    <div class="box boxR"></div> 
+                    <div class="box boxL"></div>
+                    <div class="box boxR"></div> 
+                </div>
+            </div>
 
-
-
+            <div class="bbb">transform 動畫</div>
+        </div>
+    </section>
     <footer>
         <div id="last" class="last">
-            
+
             <p>Resume~{{copyright}}~{{year}}~{{company}}</P>
         </div>
 
@@ -80,32 +94,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <script>
- new Vue({
+        new Vue({
             el: '#last',
             data: {
                 copyright: '圖片載自網路',
                 year: '©' + new Date().getFullYear(),
                 company: '個人網頁',
-            //   text:'今天時間',
-            //   time:new Date(),
+                //   text:'今天時間',
+                //   time:new Date(),
             }
         })
-new Vue({
-            el:'#tim',
-            data:{
-                text:'今天時間',
-              time:new Date(),
-             
+        new Vue({
+            el: '#tim',
+            data: {
+                text: '今天時間',
+                time: new Date(),
+
             }
         });
     </script>
 
 
 
-    
+
 </body>
 
 </html>
