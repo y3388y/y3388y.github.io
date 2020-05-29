@@ -55,7 +55,7 @@ a:hover {
             transform: unset;
   }
   .bg-op {
-    background-color: white !important;
+    background-color: #6e9bf0 !important;
   }
   .white {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -233,6 +233,7 @@ a:hover {
 .bbb {
   color: 0;
   text-align: center;
+  border-radius: 20px;
   padding: 20px;
   width: 100px;
   height: 100px;
@@ -241,11 +242,11 @@ a:hover {
   -webkit-animation-name: move;
           animation-name: move;
   /* 播放持續的時間 */
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   /* 播放延遲 */
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   /* 播放次數   infinite無限輪迴 */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -261,20 +262,20 @@ a:hover {
 
 @-webkit-keyframes move {
   0% {
-    -webkit-transform: translate(-500, 100) rotate(10deg);
-            transform: translate(-500, 100) rotate(10deg);
+    -webkit-transform: translate(-400, 100) rotate(10deg);
+            transform: translate(-400, 100) rotate(10deg);
   }
   25% {
-    -webkit-transform: translate(500px, 100);
-            transform: translate(500px, 100);
+    -webkit-transform: translate(-400px, 100);
+            transform: translate(-400px, 100);
   }
   50% {
-    -webkit-transform: translate(-500px, 100px) scale(3);
-            transform: translate(-500px, 100px) scale(3);
+    -webkit-transform: translate(-400px, 100px) scale(4, 3);
+            transform: translate(-400px, 100px) scale(4, 3);
   }
   75% {
-    -webkit-transform: translate(-500px, 100px);
-            transform: translate(-500px, 100px);
+    -webkit-transform: translate(-400px, 100px);
+            transform: translate(-400px, 100px);
   }
   100% {
     -webkit-transform: translate(0, 0) rotate(720deg);
@@ -284,20 +285,20 @@ a:hover {
 
 @keyframes move {
   0% {
-    -webkit-transform: translate(-500, 100) rotate(10deg);
-            transform: translate(-500, 100) rotate(10deg);
+    -webkit-transform: translate(-400, 100) rotate(10deg);
+            transform: translate(-400, 100) rotate(10deg);
   }
   25% {
-    -webkit-transform: translate(500px, 100);
-            transform: translate(500px, 100);
+    -webkit-transform: translate(-400px, 100);
+            transform: translate(-400px, 100);
   }
   50% {
-    -webkit-transform: translate(-500px, 100px) scale(3);
-            transform: translate(-500px, 100px) scale(3);
+    -webkit-transform: translate(-400px, 100px) scale(4, 3);
+            transform: translate(-400px, 100px) scale(4, 3);
   }
   75% {
-    -webkit-transform: translate(-500px, 100px);
-            transform: translate(-500px, 100px);
+    -webkit-transform: translate(-400px, 100px);
+            transform: translate(-400px, 100px);
   }
   100% {
     -webkit-transform: translate(0, 0) rotate(720deg);
@@ -308,7 +309,7 @@ a:hover {
 @media (max-width: 576px) {
   .bbb {
     width: 300px;
-    height: 500px;
+    height: 300px;
   }
   @-webkit-keyframes move {
     0% {
@@ -358,12 +359,11 @@ a:hover {
     background-color: cornflowerblue;
     width: 300px;
     height: calc(100vh - 100px);
-    background-color: lightgreen;
   }
   .name {
     position: fixed;
     z-index: 999;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 300px;
   }
   .name:hover {
@@ -376,16 +376,12 @@ a:hover {
   .b {
     color: #f3f7f2;
     display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   .box {
     background-color: #1eb8b0;
   }
   .bbb {
+    border-radius: 50%;
     background-color: #6baeb3;
   }
   .opening {

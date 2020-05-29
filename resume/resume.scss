@@ -59,7 +59,7 @@ a:hover{color: $color_yellow;}
     }
 
     .bg-op {
-        background-color: rgb(255, 255, 255) !important;
+        background-color: rgb(110, 155, 240) !important;
     }
 
     .white {
@@ -170,10 +170,11 @@ font-size: 100px;}
 height: calc(100vh - 100px);
 
 }
+
 .b{display: none;}
     .bbb{color: green($color: #000000);
         text-align: center;
-    
+border-radius: 20px;
         padding: 20px;
         width: 100px;
         height: 100px;
@@ -184,10 +185,10 @@ height: calc(100vh - 100px);
         animation-name: move;
 
         /* 播放持續的時間 */
-        animation-duration: 2s;
+        animation-duration: 3s;
 
         /* 播放延遲 */
-        animation-delay: 1s;
+        animation-delay: 2s;
 
         /* 播放次數   infinite無限輪迴 */
         animation-iteration-count: infinite;
@@ -208,19 +209,19 @@ height: calc(100vh - 100px);
       
 
         0%{
-            transform: translate(-500,100) rotate(10deg);
+            transform: translate(-400,100) rotate(10deg);
         }
 
         25%{
-            transform: translate(500px,100);
+            transform: translate(-400px,100);
         }
 
         50%{
-            transform: translate(-500px,100px) scale(3);
+            transform: translate(-400px,100px) scale(4,3);
         }
 
         75%{
-            transform: translate(-500px,100px);
+            transform: translate(-400px,100px);
         }
 
         100%{
@@ -230,7 +231,7 @@ height: calc(100vh - 100px);
  
 @media(max-width:576px){
     
-    .bbb{width: 300px;height:500px;
+    .bbb{width: 300px;height:300px;
     
     
         @keyframes move{
@@ -259,18 +260,20 @@ height: calc(100vh - 100px);
      
     }
 .trapezoid{background-color: cornflowerblue;
-    width: 300px;height:calc(100vh - 100px);background-color: lightgreen;}
+    width: 300px;height:calc(100vh - 100px);}
 .name{position: fixed;z-index: 999;
-margin-left: 20px;
+margin-left: 5px;
 margin-top: 300px;
 }
 .name:hover{font-size: 33px;
 color: crimson;
 }
 .aaa{background-color: rgb(193, 234, 250);}
-.b{color: rgb(243, 247, 242);display: block;
-display: flex;justify-content: space-around;}
+.b{
+    color: rgb(243, 247, 242);display: block;
+}
 .box{background-color:rgb(30, 184, 176);}
-.bbb{background-color: rgb(107, 174, 179);}
+.bbb{border-radius: 50%;
+    background-color: rgb(107, 174, 179);}
 .opening{background-color: rgb(209, 116, 147);}
 }
