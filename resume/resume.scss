@@ -96,11 +96,21 @@ font-family: 'Times New Roman', Times, serif;
     margin-left: 200px;
 
 color: $color_yellow;
-font-size: 30px;
+font-size: 50px;
+
+
+font-weight: bolder;
+ background-image: -webkit-linear-gradient(bottom, red, #fd8403, yellow); 
+ -webkit-background-clip : text; 
+ -webkit-text-fill-color: transparent; 
 }
 
-.name:hover{color: royalblue;
-font-size: 100px;}
+.name:hover{
+font-size: 100px;
+font-weight: bolder;
+ background-image: -webkit-linear-gradient(bottom, rgb(42, 112, 158), #f8edf1, rgb(31, 79, 211));
+ -webkit-background-clip : text; 
+ -webkit-text-fill-color: transparent; }
 
     .opening {
         width: 100%;
