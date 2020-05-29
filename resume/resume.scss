@@ -21,7 +21,10 @@ a:hover{color: $color_yellow;}
 
 .trapezoid{
     width:100%;height:calc(100vh - 100px);
-    background-color:$color_bluebb;
+    // background-color:$color_bluebb;
+    background-image: url(https://i.imgur.com/aXO3DdT.jpg);
+    background-size: cover;
+    background-position: center;;
     clip-path: polygon(0 0, 25% 0, 75% 100%, 0% 100%);
 }
 
@@ -93,7 +96,7 @@ font-family: 'Times New Roman', Times, serif;
 
 .name{position: fixed;z-index: 999;
     margin-top: 300px;
-    margin-left: 200px;
+    margin-left:20px;
 
 color: $color_yellow;
 font-size: 50px;
@@ -104,7 +107,7 @@ font-weight: bolder;
  -webkit-background-clip : text; 
  -webkit-text-fill-color: transparent; 
 }
-
+.c{display: none;}
 .name:hover{
 font-size: 100px;
 font-weight: bolder;
@@ -122,7 +125,7 @@ font-weight: bolder;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-
+.c{display:none;}
     .box {
         width: 100%;
         height: 10vh;
@@ -188,8 +191,9 @@ border-radius: 20px;
         padding: 20px;
         width: 100px;
         height: 100px;
-        background-color: rgb(177, 191, 235);
-
+        // background-color: rgb(177, 191, 235);
+background-image: url(https://i0.wp.com/yunikdraw.com/wp-content/uploads/2018/07/IMG_3866.jpg?ssl=1);
+background-size: cover;;
 
         /* 套用的動畫名稱 */
         animation-name: move;
@@ -248,29 +252,31 @@ border-radius: 20px;
       
 
             0%{
-                transform: translate(0px,50px) rotate(10deg);
+                transform: translate(150px,150px) rotate(10deg)scale(0.3);
             }
     
             25%{
-                transform: translate(0px,50px);
+                transform: translate(250px,300px)scale(0.4);
             }
     
             50%{
-                transform: translate(0px,50px) scale(0.5);
+                transform: translate(200px,250px) scale(0.5);
             }
     
             75%{
-                transform: translate(0px,50px);
+                transform: translate(150px,300px)scale(0.7);
             }
     
             100%{
-                transform: translate(0,0) rotate(720deg);
+                transform: translate(0,0) rotate(720deg)scale(0.9);
             }
         }
      
     }
-.trapezoid{background-color: cornflowerblue;
-    width: 300px;height:calc(100vh - 100px);}
+.trapezoid{background-color: rgb(152, 100, 237);
+   display: none;
+}
+
 .name{position: fixed;z-index: 999;
 margin-left: 5px;
 margin-top: 300px;
@@ -280,10 +286,18 @@ color: crimson;
 }
 .aaa{background-color: rgb(193, 234, 250);}
 .b{
-    color: rgb(243, 247, 242);display: block;
+    color: rgb(112, 11, 61);display: block;
 }
 .box{background-color:rgb(30, 184, 176);}
-.bbb{border-radius: 50%;
-    background-color: rgb(107, 174, 179);}
+.bbb{border-radius: 50%;font-size: 50px;
+    font-weight: bolder;
+  
+    // background-color: rgb(107, 174, 179);
+background-image: url(https://vip-go.shutterstock.com/zh-Hant_blog/wp-content/uploads/sites/11/2019/03/Fluorescent-Gradients-Tutorial-Featured-Image-3.png);
+}
 .opening{background-color: rgb(209, 116, 147);}
+}
+.c{display:block;background-image:url(https://www.bomb01.com/upload/news/original/8be60c5809e1c3482a6d62033a768ce4.jpg);
+    width: 100%; height: 582px;
+    background-size: cover;
 }

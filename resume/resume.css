@@ -18,7 +18,9 @@ a:hover {
 .trapezoid {
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: #cbeaf7b6;
+  background-image: url(https://i.imgur.com/aXO3DdT.jpg);
+  background-size: cover;
+  background-position: center;
   -webkit-clip-path: polygon(0 0, 25% 0, 75% 100%, 0% 100%);
           clip-path: polygon(0 0, 25% 0, 75% 100%, 0% 100%);
 }
@@ -108,8 +110,8 @@ a:hover {
   position: fixed;
   z-index: 999;
   margin-top: 300px;
-  margin-left: 200px;
-  color: #6e32b3;
+  margin-left: 20px;
+  background-color: darkgoldenrod;
   font-size: 50px;
   font-weight: bolder;
   background-image: -webkit-linear-gradient(bottom, red, #fd8403, yellow);
@@ -117,10 +119,14 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.c {
+  display: none;
+}
+
 .name:hover {
   font-size: 100px;
   font-weight: bolder;
-  background-image: -webkit-linear-gradient(bottom, #2a709e, #eea0ba, #031853), url(https://1.bp.blogspot.com/-1zaMKRUhr_8/XPNm0kA56RI/AAAAAAAAAPY/sdxyODONFaw9BHrnBq4p_NVFRyvJVcUGQCLcBGAs/s1600/1.jpg);
+  background-image: -webkit-linear-gradient(bottom, #2a709e, #f8edf1, #1f4fd3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -137,6 +143,10 @@ a:hover {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.c {
+  display: none;
 }
 
 .box {
@@ -244,7 +254,8 @@ a:hover {
   padding: 20px;
   width: 100px;
   height: 100px;
-  background-color: #b1bfeb;
+  background-image: url(https://i0.wp.com/yunikdraw.com/wp-content/uploads/2018/07/IMG_3866.jpg?ssl=1);
+  background-size: cover;
   /* 套用的動畫名稱 */
   -webkit-animation-name: move;
           animation-name: move;
@@ -320,52 +331,51 @@ a:hover {
   }
   @-webkit-keyframes move {
     0% {
-      -webkit-transform: translate(0px, 50px) rotate(10deg);
-              transform: translate(0px, 50px) rotate(10deg);
+      -webkit-transform: translate(150px, 150px) rotate(10deg) scale(0.3);
+              transform: translate(150px, 150px) rotate(10deg) scale(0.3);
     }
     25% {
-      -webkit-transform: translate(0px, 50px);
-              transform: translate(0px, 50px);
+      -webkit-transform: translate(250px, 300px) scale(0.4);
+              transform: translate(250px, 300px) scale(0.4);
     }
     50% {
-      -webkit-transform: translate(0px, 50px) scale(0.5);
-              transform: translate(0px, 50px) scale(0.5);
+      -webkit-transform: translate(200px, 250px) scale(0.5);
+              transform: translate(200px, 250px) scale(0.5);
     }
     75% {
-      -webkit-transform: translate(0px, 50px);
-              transform: translate(0px, 50px);
+      -webkit-transform: translate(150px, 300px) scale(0.7);
+              transform: translate(150px, 300px) scale(0.7);
     }
     100% {
-      -webkit-transform: translate(0, 0) rotate(720deg);
-              transform: translate(0, 0) rotate(720deg);
+      -webkit-transform: translate(0, 0) rotate(720deg) scale(0.9);
+              transform: translate(0, 0) rotate(720deg) scale(0.9);
     }
   }
   @keyframes move {
     0% {
-      -webkit-transform: translate(0px, 50px) rotate(10deg);
-              transform: translate(0px, 50px) rotate(10deg);
+      -webkit-transform: translate(150px, 150px) rotate(10deg) scale(0.3);
+              transform: translate(150px, 150px) rotate(10deg) scale(0.3);
     }
     25% {
-      -webkit-transform: translate(0px, 50px);
-              transform: translate(0px, 50px);
+      -webkit-transform: translate(250px, 300px) scale(0.4);
+              transform: translate(250px, 300px) scale(0.4);
     }
     50% {
-      -webkit-transform: translate(0px, 50px) scale(0.5);
-              transform: translate(0px, 50px) scale(0.5);
+      -webkit-transform: translate(200px, 250px) scale(0.5);
+              transform: translate(200px, 250px) scale(0.5);
     }
     75% {
-      -webkit-transform: translate(0px, 50px);
-              transform: translate(0px, 50px);
+      -webkit-transform: translate(150px, 300px) scale(0.7);
+              transform: translate(150px, 300px) scale(0.7);
     }
     100% {
-      -webkit-transform: translate(0, 0) rotate(720deg);
-              transform: translate(0, 0) rotate(720deg);
+      -webkit-transform: translate(0, 0) rotate(720deg) scale(0.9);
+              transform: translate(0, 0) rotate(720deg) scale(0.9);
     }
   }
   .trapezoid {
-    background-color: cornflowerblue;
-    width: 300px;
-    height: calc(100vh - 100px);
+    background-color: #9864ed;
+    display: none;
   }
   .name {
     position: fixed;
@@ -381,7 +391,7 @@ a:hover {
     background-color: #c1eafa;
   }
   .b {
-    color: #f3f7f2;
+    color: #700b3d;
     display: block;
   }
   .box {
@@ -389,10 +399,20 @@ a:hover {
   }
   .bbb {
     border-radius: 50%;
-    background-color: #6baeb3;
+    font-size: 50px;
+    font-weight: bolder;
+    background-image: url(https://vip-go.shutterstock.com/zh-Hant_blog/wp-content/uploads/sites/11/2019/03/Fluorescent-Gradients-Tutorial-Featured-Image-3.png);
   }
   .opening {
     background-color: #d17493;
   }
+}
+
+.c {
+  display: block;
+  background-image: url(https://www.bomb01.com/upload/news/original/8be60c5809e1c3482a6d62033a768ce4.jpg);
+  width: 100%;
+  height: 582px;
+  background-size: cover;
 }
 /*# sourceMappingURL=resume.css.map */
